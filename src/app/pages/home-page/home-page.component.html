@@ -1,3 +1,68 @@
+<div id="background-home-page">
+  <img ngSrc="assets/home/bottom-code.png" alt="" title="" fill>
+</div>
 <div id="container-home-page">
-  <p>home-page works!</p>
+  <div class="base-info-home-page">
+    <h1 class="font-60">
+      <div class="title-home-page">
+        <span>F</span>
+        <span>r</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>-</span>
+        <span>E</span>
+        <span>n</span>
+        <span>d</span>
+      </div>
+      <div class="title-home-page">
+        <span>S</span>
+        <span>o</span>
+        <span>f</span>
+        <span>t</span>
+        <span>w</span>
+        <span>a</span>
+        <span>r</span>
+        <span>e</span>
+      </div>
+      <div class="title-home-page">
+        <span>D</span>
+        <span>e</span>
+        <span>v</span>
+        <span>e</span>
+        <span>l</span>
+        <span>o</span>
+        <span>p</span>
+        <span>e</span>
+        <span>r</span>
+      </div>
+    </h1>
+
+    <div class="description-home-page">
+      <span>
+        Transformo desafios em soluções práticas e eficientes,
+        criando interfaces limpas e interativas. Foco no
+        desenvolvimento de aplicações web rápidas, responsivas
+        e adaptáveis, sempre visando uma experiência digital
+        fluida e inovadora.
+      </span>
+    </div>
+
+    <button class="button-about-me-home-page"
+            (click)="toggle()">
+      Sobre mim
+      <mat-icon>
+        {{ isOpen ? 'keyboard_arrow_down' : 'chevron_right' }}
+      </mat-icon>
+    </button>
+  </div>
+
+
+  <div class="image-home-page">
+    <img ngSrc="assets/home/PCsemFundo.png" alt="" title="" fill>
+  </div>
+</div>
+
+<div id="icon-home-page">
+  <img ngSrc="assets/home/desenvolvedor.png" alt="" title="" fill>
 </div>
