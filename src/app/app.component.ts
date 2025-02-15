@@ -6,6 +6,7 @@ import {ProjectsPageComponent} from "./pages/projects-page/projects-page.compone
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
 import {MatIconModule} from "@angular/material/icon";
 import {NavbarComponent} from "./components/navbar/navbar.component";
+import {FullpageService} from "./services/fullpage.service";
 
 declare var fullpage: any;
 
@@ -27,19 +28,9 @@ declare var fullpage: any;
 export class AppComponent implements AfterViewInit {
   title = 'lucas-sanches';
 
-  ngAfterViewInit(): void {
-    if (typeof fullpage !== 'undefined') {
-      new fullpage('#fullpage', {
-        autoScrolling: true,
-        scrollHorizontally: true,
-        navigation: true,
-        anchors: ['home', 'about', 'skills', 'portfolio', 'contact', 'teste'],
-        recordHistory: false,
-        menu: '#menu',
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#f2f2f2', '#f2f2f2'],
-      });
-    } else {
-      console.error('fullpage.js não está carregado corretamente');
-    }
+  constructor(private fullpageService: FullpageService) {}
+
+  public ngAfterViewInit(): void {
+    this.fullpageService.initializeFullpage();
   }
 }

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
+import {FullpageService} from "../../services/fullpage.service";
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +12,9 @@ import {MatIcon} from "@angular/material/icon";
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  constructor(private fullpageService: FullpageService) {}
 
+ public scrollToContact() {
+    this.fullpageService.moveToSection('contact');
+  }
 }
