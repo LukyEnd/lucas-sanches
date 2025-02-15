@@ -5,6 +5,7 @@ import {AboutPageComponent} from "./pages/about-page/about-page.component";
 import {ProjectsPageComponent} from "./pages/projects-page/projects-page.component";
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
 import {MatIconModule} from "@angular/material/icon";
+import {NavbarComponent} from "./components/navbar/navbar.component";
 
 declare var fullpage: any;
 
@@ -17,7 +18,8 @@ declare var fullpage: any;
     AboutPageComponent,
     ProjectsPageComponent,
     ContactPageComponent,
-    MatIconModule
+    MatIconModule,
+    NavbarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
