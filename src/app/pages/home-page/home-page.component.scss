@@ -107,7 +107,7 @@
   .image-home-page {
     background: transparent;
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,6 @@
 
     img {
       background: transparent;
-      max-width: 500px;
       height: auto;
       position: static !important;
       object-fit: contain;
@@ -160,4 +159,31 @@
     object-fit: contain;
     filter: blur(1px);
   }
+}
+
+
+
+/* Animação ao sair da página */
+.page-exit #background-home-page {
+  opacity: 0;
+  filter: blur(15px);
+  transition: opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
+}
+
+.page-exit .base-info-home-page {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.page-exit .image-home-page img {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.page-exit #icon-home-page img {
+  transform: rotate(-10deg) scale(0.8);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
