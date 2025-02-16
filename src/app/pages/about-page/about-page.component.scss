@@ -1,10 +1,118 @@
 #container-about-page {
-  background-color: rgb(20, 20, 22);
-  color: white;
+  position: relative;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
+  overflow: hidden;
+  font-family: var(--font-main), sans-serif;
+
+  .about-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: blur(4px);
+      opacity: 0.3;
+      border-radius: 150px;
+    }
+  }
+
+  .about-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 35px;
+
+    .about-box {
+      width: 100%;
+      max-width: 500px;
+
+      h1 {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: var(--font-size-large);
+        line-height: 28px;
+        text-align: center;
+
+        .title-about-page {
+          display: inline-block;
+          margin: 0 15px 10px 0;
+          overflow: visible;
+
+          span {
+            display: inline-block;
+            font-size: var(--font-size-small);
+            transition: waterDrop 0.3s ease-out;
+          }
+
+          span:hover {
+            color: var(--highlight-color);
+            animation: waterDrop 0.3s ease-in-out forwards;
+          }
+        }
+      }
+
+      .subtitle-about-page {
+        padding: 20px 0;
+        font-family: var(--font-secondary), sans-serif;
+        font-size: var(--font-size-medium);
+        line-height: 24px;
+        color: var(--description-color);
+      }
+    }
+
+    .description-about-page {
+      width: 100%;
+      max-width: 40%;
+      padding: 20px 0;
+      font-family: var(--font-secondary), sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: var(--font-size-medium);
+      line-height: 24px;
+      color: var(--description-color);
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@keyframes waterDrop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -12,9 +12,14 @@ import {FullpageService} from "../../services/fullpage.service";
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  constructor(private fullpageService: FullpageService) {}
+  constructor(private fullpageService: FullpageService) {
+  }
 
- public scrollToContact() {
+  public scrollToHome(): void {
+    this.fullpageService.moveToSection('home');
+  }
+
+  public scrollToContact() {
     this.fullpageService.moveToSection('contact');
   }
 }
