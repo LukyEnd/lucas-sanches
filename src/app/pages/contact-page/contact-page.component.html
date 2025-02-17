@@ -1,3 +1,45 @@
 <div id="container-contact-page">
-  <p>contact-page works!</p>
+  <div class="contact-image">
+    <img ngSrc="/assets/home/PCsemFundo.png" alt="Imagem de contato" height="400" width="400">
+  </div>
+
+  <div class="contact-info">
+<!--    <h2>Vamos Conversar!</h2>-->
+
+    <h2 class="font-60">
+      <div class="title-contact-page">
+        <span>V</span>
+        <span>a</span>
+        <span>m</span>
+        <span>o</span>
+        <span>s</span>
+      </div>
+      <div class="title-contact-page">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+        <span>s</span>
+        <span>a</span>
+        <span>r</span>
+        <span>!</span>
+      </div>
+    </h2>
+
+
+
+    <span>
+      Se você está pronto para iniciar um novo projeto, discutir ideias ou
+      mesmo só para um bate-papo, estou à disposição. Fique à vontade para
+      entrar em contato comigo!
+    </span>
+    <div class="contact-details">
+      <span>
+        <strong>Email: </strong>
+        <a [href]="'mailto:' + emailUser">{{ emailUser }}</a>
+      </span>
+    </div>
+  </div>
 </div>
