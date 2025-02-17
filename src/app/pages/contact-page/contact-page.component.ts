@@ -8,7 +8,7 @@ import {NgOptimizedImage} from "@angular/common";
     NgOptimizedImage
   ],
   templateUrl: './contact-page.component.html',
-  styleUrl: './contact-page.component.scss'
+  styleUrls: ['./contact-page.component.scss', './../base.scss']
 })
 export class ContactPageComponent {
   public emailUser: string = 'sanchesluka31@gmail.com';

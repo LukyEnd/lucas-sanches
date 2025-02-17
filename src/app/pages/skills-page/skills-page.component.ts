@@ -8,7 +8,7 @@ import {NgOptimizedImage} from "@angular/common";
     NgOptimizedImage
   ],
   templateUrl: './skills-page.component.html',
-  styleUrl: './skills-page.component.scss'
+  styleUrls: ['./skills-page.component.scss', './../base.scss']
 })
 export class SkillsPageComponent {
 

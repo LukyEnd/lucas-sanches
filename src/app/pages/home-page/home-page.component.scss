@@ -13,6 +13,7 @@
 
   img {
     width: 100%;
+    max-width: 75%;
     height: 100%;
     object-fit: contain;
     filter: blur(7px);
@@ -22,18 +23,6 @@
 }
 
 #container-home-page {
-  position: relative;
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  font-family: var(--font-main), sans-serif;
-
   .base-info-home-page {
     width: 100%;
     max-width: 850px;
@@ -46,42 +35,8 @@
     cursor: default;
     z-index: 2;
 
-    h1 {
-      width: 100%;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      font-size: var(--font-size-large);
-      line-height: 28px;
-      text-align: center;
-
-      .title-home-page {
-        display: inline-block;
-        margin: 0 15px 10px 0;
-        overflow: visible;
-
-        span {
-          display: inline-block;
-          font-size: var(--font-size-small);
-          transition: waterDrop 0.3s ease-out;
-        }
-
-        span:hover {
-          color: var(--highlight-color);
-          animation: waterDrop 0.3s ease-in-out forwards;
-        }
-      }
-    }
-
     .description-home-page {
       padding: 20px 0;
-      font-family: var(--font-secondary), sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-size: var(--font-size-medium);
-      line-height: 24px;
-      color: var(--description-color);
     }
 
     .button-about-me-home-page {
@@ -115,34 +70,17 @@
     position: relative;
 
     img {
-      background: transparent;
+      max-width: 100%;
+      max-height: 80vh;
+      width: auto;
       height: auto;
-      position: static !important;
       object-fit: contain;
+      background: transparent;
+      position: static !important;
       display: block;
       z-index: 2;
     }
   }
-}
-
-@keyframes waterDrop {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.element {
-  display: inline-block;
-  animation: waterDrop 1s ease-in-out infinite;
 }
 
 #icon-home-page {
@@ -159,29 +97,4 @@
     object-fit: contain;
     filter: blur(1px);
   }
-}
-
-
-.page-exit #background-home-page {
-  opacity: 0;
-  filter: blur(15px);
-  transition: opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
-}
-
-.page-exit .base-info-home-page {
-  transform: translateY(50px);
-  opacity: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-}
-
-.page-exit .image-home-page img {
-  transform: scale(0.9);
-  opacity: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-}
-
-.page-exit #icon-home-page img {
-  transform: rotate(-10deg) scale(0.8);
-  opacity: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }

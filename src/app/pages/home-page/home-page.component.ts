@@ -11,7 +11,7 @@ import {FullpageService} from "../../services/fullpage.service";
     NgOptimizedImage
   ],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss'
+  styleUrls: ['./home-page.component.scss','./../base.scss']
 })
 export class HomePageComponent {
   public isOpen: boolean = false;
