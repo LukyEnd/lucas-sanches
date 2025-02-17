@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {FullpageService} from "../../services/fullpage.service";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
-    MatIcon
+    MatIcon,
+    NgOptimizedImage
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'

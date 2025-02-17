@@ -65,6 +65,7 @@
             display: inline-block;
             font-size: var(--font-size-small);
             transition: waterDrop 0.3s ease-out;
+            cursor: default;
           }
 
           span:hover {

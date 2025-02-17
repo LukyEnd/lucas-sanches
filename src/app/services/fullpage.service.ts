@@ -17,7 +17,7 @@ export class FullpageService {
         autoScrolling: true,
         scrollHorizontally: true,
         navigation: true,
-        anchors: ['home', 'about', 'portfolio', 'contact'],
+        anchors: ['home', 'about', 'skills', 'projects', 'contact'],
         recordHistory: false,
         menu: '#menu',
         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#f2f2f2', '#f2f2f2'],

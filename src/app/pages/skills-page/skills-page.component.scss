@@ -1,0 +1,103 @@
+#container-skill-page {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main), sans-serif;
+
+  h1 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--font-size-large);
+    line-height: 28px;
+    text-align: center;
+
+    .title-skill-page {
+      display: inline-block;
+      margin: 0 15px 10px 0;
+      overflow: visible;
+
+      span {
+        display: inline-block;
+        font-size: var(--font-size-small);
+        transition: color 0.3s ease-out;
+        cursor: default;
+      }
+
+      span:hover {
+        color: var(--highlight-color);
+        animation: waterDrop 0.3s ease-in-out forwards;
+      }
+    }
+  }
+
+
+  .description-skill-page {
+    width: 100%;
+    max-width: 60%;
+    padding: 20px 0;
+    margin: 50px 0;
+    font-family: var(--font-secondary), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--font-size-medium);
+    line-height: 24px;
+    color: var(--description-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      text-align: center;
+      display: block;
+      margin-bottom: 15px;
+
+      a {
+        color: var(--highlight-color);
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+      }
+
+      a:hover {
+        color: #0A6C77FF;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .skills-page {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      margin: 10px;
+    }
+  }
+}
+
+@keyframes waterDrop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
