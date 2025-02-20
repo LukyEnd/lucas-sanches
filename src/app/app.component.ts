@@ -1,5 +1,5 @@
 import {HomePageComponent} from "./pages/home-page/home-page.component";
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {AboutPageComponent} from "./pages/about-page/about-page.component";
 import {ProjectsPageComponent} from "./pages/projects-page/projects-page.component";
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
@@ -23,10 +23,16 @@ import {SkillsPageComponent} from "./pages/skills-page/skills-page.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit {
   title = 'lucas-sanches';
 
   constructor(private fullpageService: FullpageService) {
+  }
+
+  ngOnInit() {
+    if (!window.location.hash || window.location.hash !== '#home') {
+      window.location.hash = '#home';
+    }
   }
 
   public ngAfterViewInit(): void {
