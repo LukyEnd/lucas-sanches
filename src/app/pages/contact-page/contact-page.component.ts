@@ -1,15 +1,22 @@
 import {Component} from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
+import {DataContactPageModel} from "../../models/data-contact-page.model";
+import {ContactService} from "../../services/contact.service";
 
 @Component({
   selector: 'app-contact-page',
   standalone: true,
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgForOf
   ],
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.scss', './../base.scss']
 })
 export class ContactPageComponent {
-  public emailUser: string = 'sanchesluka31@gmail.com';
+  public dataContactPage: DataContactPageModel;
+
+  constructor(private contactService: ContactService) {
+    this.dataContactPage = this.contactService.getContactPageData();
+  }
 }

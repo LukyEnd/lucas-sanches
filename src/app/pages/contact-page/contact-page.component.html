@@ -1,39 +1,26 @@
 <div id="container-contact-page">
   <div class="contact-image animate__animated animate__slideInTop">
-    <img ngSrc="/assets/home/PCsemFundo.png" alt="Imagem de contato" height="400" width="400">
+    <img [ngSrc]="dataContactPage.image.src"
+         [alt]="dataContactPage.image.alt"
+         height="400"
+         width="400">
   </div>
-
   <div class="contact-info">
     <h1 class="font-60 animate__animated animate__slideInTop">
       <div class="title-contact-page">
-        <span>V</span>
-        <span>a</span>
-        <span>m</span>
-        <span>o</span>
-        <span>s</span>
+        <span *ngFor="let contact of dataContactPage.title.contact">{{ contact }}</span>
       </div>
       <div class="title-contact-page">
-        <span>C</span>
-        <span>o</span>
-        <span>n</span>
-        <span>v</span>
-        <span>e</span>
-        <span>r</span>
-        <span>s</span>
-        <span>a</span>
-        <span>r</span>
-        <span>!</span>
+        <span *ngFor="let action of dataContactPage.title.action">{{ action }}</span>
       </div>
     </h1>
     <span class="description-contact-page animate__animated animate__slideInTop animate__delay-1s">
-      Se você está pronto para iniciar um novo projeto, discutir ideias ou
-      mesmo só para um bate-papo, estou à disposição. Fique à vontade para
-      entrar em contato comigo!
+      {{ dataContactPage.description }}
     </span>
     <div class="contact-details animate__animated animate__slideInBottom animate__delay-2s">
       <span>
         <strong>Email: </strong>
-        <a [href]="'mailto:' + emailUser">{{ emailUser }}</a>
+        <a [href]="'mailto:' + dataContactPage.emailUser">{{ dataContactPage.emailUser }}</a>
       </span>
     </div>
   </div>

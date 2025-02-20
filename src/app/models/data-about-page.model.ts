@@ -1,4 +1,4 @@
-import {AboutPageImageModel} from "./about-page-image.model";
+import {ImagePageModel} from "./about-page-image.model";
 import {TitleAboutPageModel} from "./title-about-page.model";
 
 export class DataAboutPageModel {
@@ -6,7 +6,7 @@ export class DataAboutPageModel {
     public title: TitleAboutPageModel,
     public subtitle: string,
     public description: string[],
-    public image: AboutPageImageModel
+    public image: ImagePageModel
   ) {
   }
 }
