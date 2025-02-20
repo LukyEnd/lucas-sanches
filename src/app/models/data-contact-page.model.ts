@@ -1,5 +1,5 @@
 import {TitleContactPageModel} from "./title-contact-page-model";
-import {ImagePageModel} from "./about-page-image.model";
+import {ImagePageModel} from "./images-pages.model";
 
 export class DataContactPageModel {
   constructor(

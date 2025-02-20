@@ -1,26 +1,34 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
 import {FullpageService} from "../../services/fullpage.service";
+import {HomePageModel} from "../../models/data-home-page.model";
+import {HomeService} from "../../services/home.service";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   imports: [
     MatIcon,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgForOf
   ],
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss','./../base.scss']
+  styleUrls: ['./home-page.component.scss', './../base.scss']
 })
 export class HomePageComponent {
+  public homePageData: HomePageModel;
   public isOpen: boolean = false;
 
-  constructor(private fullpageService: FullpageService) {
+  constructor(
+    private fullPageService: FullpageService,
+    private homePageService: HomeService
+  ) {
+    this.homePageData = this.homePageService.getHomePageData();
   }
 
   public toggle(): void {
     this.isOpen = !this.isOpen;
-    this.fullpageService.moveToSection('about');
+    this.fullPageService.moveToSection('about');
   }
 }

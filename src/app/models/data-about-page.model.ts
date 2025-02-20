@@ -1,4 +1,4 @@
-import {ImagePageModel} from "./about-page-image.model";
+import {ImagePageModel} from "./images-pages.model";
 import {TitleAboutPageModel} from "./title-about-page.model";
 
 export class DataAboutPageModel {
