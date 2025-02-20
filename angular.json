@@ -31,10 +31,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/fullpage.js/dist/fullpage.min.css"
+              "node_modules/fullpage.js/dist/fullpage.css"
             ],
             "scripts": [
-              "node_modules/fullpage.js/dist/fullpage.min.js"
+              "node_modules/fullpage.js/dist/fullpage.js",
+              "node_modules/fullpage.js/vendors/easings.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,

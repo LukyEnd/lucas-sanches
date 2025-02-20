@@ -21,7 +21,6 @@ export class HomePageComponent {
 
   public toggle(): void {
     this.isOpen = !this.isOpen;
-
     this.fullpageService.moveToSection('about');
   }
 }

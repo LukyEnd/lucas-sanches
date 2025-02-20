@@ -14,3 +14,22 @@
 .fp-watermark {
   display: none !important;
 }
+
+html, body {
+  overflow: hidden !important;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+/* Chrome, Safari e Edge */
+::-webkit-scrollbar {
+  display: none;
+}
