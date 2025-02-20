@@ -15,7 +15,7 @@ export class FullpageService {
         fitToSection: true,
         scrollBar: true,
         loopTop: false,
-        loopBottom: true,
+        loopBottom: false,
         keyboardScrolling: true,
         navigation: true,
         anchors: ['home', 'about', 'skills', 'projects', 'contact'],

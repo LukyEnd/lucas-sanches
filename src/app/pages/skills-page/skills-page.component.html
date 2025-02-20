@@ -1,80 +1,34 @@
 <div id="container-skill-page">
   <h1 class="font-60 animate__animated animate__slideInBottom">
     <div class="title-skill-page">
-      <span>S</span>
-      <span>k</span>
-      <span>i</span>
-      <span>l</span>
-      <span>l</span>
-      <span>s</span>
+      <span *ngFor="let skills of textPageSkill.title.skills">{{ skills }}</span>
     </div>
     <div class="title-skill-page">
       <span>&</span>
     </div>
     <div class="title-skill-page">
-      <span>E</span>
-      <span>x</span>
-      <span>p</span>
-      <span>e</span>
-      <span>r</span>
-      <span>i</span>
-      <span>ê</span>
-      <span>n</span>
-      <span>c</span>
-      <span>i</span>
-      <span>a</span>
-      <span>s</span>
+      <span *ngFor="let experiences of textPageSkill.title.experiences">{{ experiences }}</span>
     </div>
   </h1>
 
-  <div class="description-skill-page animate__animated animate__slideInTop animate__delay-1s">
+  <div class="description-skill-page animate__animated animate__slideInTop animate__delay-0.5s">
+    <span> {{ textPageSkill.description[0] }} </span>
+    <span> {{ textPageSkill.description[1] }} </span>
     <span>
-      Minha especialização é no desenvolvimento front-end, com experiência sólida
-      em HTML, CSS, JavaScript e criação de aplicações web interativas. Sou
-      habilidoso em frameworks como Angular e React, além de trabalhar com TypeScript
-      e gerenciamento de estado com NgRx. Também tenho experiência com o WordPress.
-    </span>
-    <span>
-      Estou sempre em busca de novos desafios e aprendizados.
-    </span>
-    <span>
-      Confira meu
-      <a href="https://www.linkedin.com/in/lucas-sanches-cavalheiro/"
-         target="_blank"
-         rel="noopener noreferrer">
-        LinkedIn
+      {{ textPageSkill.description[2] }}
+      <a href="{{textPageSkill.socialNetworks.link}}" target="_blank" rel="noopener noreferrer">
+        {{ textPageSkill.socialNetworks.name }}
       </a>
-      para mais detalhes.
+      {{ textPageSkill.description[3] }}
     </span>
   </div>
 
-  <div class="skills-page animate__animated animate__slideInTop animate__delay-2s">
-    <img ngSrc="/assets/skills/adobe-xd.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/angular.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/angular-material.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/bootstrap.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/C.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/css3.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/figma.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/git.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/github.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/gitlab.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/html5.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/insomnia.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/intellij.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/js.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/net.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/ngrx.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/npm.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/postman.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/react.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/rider.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/scss.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/ts.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/ubuntu.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/vscode.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/webstorm.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/wordpress.png" alt="" height="70" width="70">
-    <img ngSrc="/assets/skills/cypress.png" alt="" height="70" width="70">
+  <div class="skills-page">
+    <img *ngFor="let skill of skills; let i = index"
+         [ngClass]="'animate__animated animate__slideInTop'"
+         [ngStyle]="{'animation-delay': (i * 0.1) + 's'}"
+         [ngSrc]="skill.src"
+         [alt]="skill.alt"
+         height="70" width="70">
   </div>
 </div>
