@@ -1,8 +1,7 @@
 import {Component} from '@angular/core';
 import {NgClass, NgForOf, NgOptimizedImage, NgStyle} from "@angular/common";
 import {SkillsService} from "../../services/skills.service";
-import {SkillModel} from "../../models/skill-model";
-import {TextPageModel} from "../../models/text-page-model";
+import {DataSkillPageModel} from "../../models/data-skills-page.data";
 
 @Component({
   selector: 'app-skills-page',
@@ -17,11 +16,9 @@ import {TextPageModel} from "../../models/text-page-model";
   styleUrls: ['./skills-page.component.scss', './../base.scss']
 })
 export class SkillsPageComponent {
-  public textPageSkill: TextPageModel;
-  public skills: SkillModel[] = [];
+  public dataSkillPage: DataSkillPageModel;
 
   constructor(private skillsService: SkillsService) {
-    this.skills = this.skillsService.getSkills();
-    this.textPageSkill = this.skillsService.getTextPageSkill();
+    this.dataSkillPage = this.skillsService.dataPage();
   }
 }

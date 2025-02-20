@@ -1,30 +1,30 @@
 <div id="container-skill-page">
   <h1 class="font-60 animate__animated animate__slideInBottom">
     <div class="title-skill-page">
-      <span *ngFor="let skills of textPageSkill.title.skills">{{ skills }}</span>
+      <span *ngFor="let skills of dataSkillPage.title.skills">{{ skills }}</span>
     </div>
     <div class="title-skill-page">
       <span>&</span>
     </div>
     <div class="title-skill-page">
-      <span *ngFor="let experiences of textPageSkill.title.experiences">{{ experiences }}</span>
+      <span *ngFor="let experiences of dataSkillPage.title.experiences">{{ experiences }}</span>
     </div>
   </h1>
 
   <div class="description-skill-page animate__animated animate__slideInTop animate__delay-0.5s">
-    <span> {{ textPageSkill.description[0] }} </span>
-    <span> {{ textPageSkill.description[1] }} </span>
+    <span> {{ dataSkillPage.description[0] }} </span>
+    <span> {{ dataSkillPage.description[1] }} </span>
     <span>
-      {{ textPageSkill.description[2] }}
-      <a href="{{textPageSkill.socialNetworks.link}}" target="_blank" rel="noopener noreferrer">
-        {{ textPageSkill.socialNetworks.name }}
+      {{ dataSkillPage.description[2] }}
+      <a href="{{dataSkillPage.socialNetworks.link}}" target="_blank" rel="noopener noreferrer">
+        {{ dataSkillPage.socialNetworks.name }}
       </a>
-      {{ textPageSkill.description[3] }}
+      {{ dataSkillPage.description[3] }}
     </span>
   </div>
 
   <div class="skills-page">
-    <img *ngFor="let skill of skills; let i = index"
+    <img *ngFor="let skill of dataSkillPage.listSkills; let i = index"
          [ngClass]="'animate__animated animate__slideInTop'"
          [ngStyle]="{'animation-delay': (i * 0.1) + 's'}"
          [ngSrc]="skill.src"

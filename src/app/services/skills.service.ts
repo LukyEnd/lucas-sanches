@@ -1,19 +1,13 @@
 import {Injectable} from '@angular/core';
-import {SkillModel} from "../models/skill-model";
-import {TextPageModel} from "../models/text-page-model";
+import {DataSkillPageModel} from "../models/data-skills-page.data";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
-  private skills: SkillModel[] = require('./json/skills.json');
-  private textPageSkill: TextPageModel = require('./json/tex-page-kill.json');
+  private dataSkillPage: DataSkillPageModel = require('./json/data-skill-page.json');
 
-  public getSkills(): SkillModel[] {
-    return this.skills;
-  }
-
-  public getTextPageSkill(): TextPageModel {
-    return this.textPageSkill;
+  public dataPage(): DataSkillPageModel {
+    return this.dataSkillPage;
   }
 }
