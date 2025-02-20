@@ -1,0 +1,58 @@
+{
+  "title": {
+    "greeting": [
+      "O",
+      "l",
+      "á",
+      ","
+    ],
+    "introduction": [
+      "S",
+      "o",
+      "u"
+    ],
+    "name": [
+      "L",
+      "u",
+      "c",
+      "a",
+      "s",
+      ","
+    ],
+    "role": [
+      "U",
+      "m"
+    ],
+    "job": [
+      "D",
+      "e",
+      "s",
+      "e",
+      "n",
+      "v",
+      "o",
+      "l",
+      "v",
+      "e",
+      "d",
+      "o",
+      "r"
+    ],
+    "profession": [
+      "W",
+      "e",
+      "b"
+    ]
+  },
+  "subtitle": "Front End Specialist / Angular & TypeScript Expert / NgRx Enthusiast / React Learner / Testing with Cypress & Karma",
+  "description": [
+    "Profissionalmente imerso na indústria de desenvolvimento web.",
+    "Sou um solucionador de problemas, altamente organizado, leal e atento aos detalhes. Apaixonado por atividades ao ar livre, videogames, filmes, séries, e, claro, programação.",
+    "Estou sempre buscando expandir meu conhecimento no universo front-end e colaborando em projetos desafiadores com pessoas incríveis."
+  ],
+  "image": {
+    "src": "assets/home/PCsemFundo.png",
+    "alt": "Minha Foto",
+    "title": "Minha Foto"
+  }
+}

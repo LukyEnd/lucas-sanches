@@ -1,78 +1,39 @@
 <div id="container-about-page">
   <div class="about-bg">
-    <img ngSrc="assets/home/PCsemFundo.png" alt="Minha Foto" title="" height="1140" width="980">
+    <img [ngSrc]="aboutPage.image.src" [alt]="aboutPage.image.alt" [title]="aboutPage.image.title" height="1140"
+         width="980">
   </div>
   <div class="about-content animate__animated animate__fade">
     <div class="about-box">
       <h1 class="font-60">
         <div class="title-about-page">
-          <span>O</span>
-          <span>l</span>
-          <span>á</span>
-          <span>,</span>
+          <span *ngFor="let greeting of aboutPage.title.greeting">{{ greeting }}</span>
         </div>
         <div class="title-about-page">
-          <span>S</span>
-          <span>o</span>
-          <span>u</span>
+          <span *ngFor="let introduction of aboutPage.title.introduction">{{ introduction }}</span>
         </div>
         <div class="title-about-page">
-          <span>L</span>
-          <span>u</span>
-          <span>c</span>
-          <span>a</span>
-          <span>s</span>
-          <span>,</span>
+          <span *ngFor="let name of aboutPage.title.name">{{ name }}</span>
         </div>
         <div class="title-about-page">
-          <span>U</span>
-          <span>m</span>
+          <span *ngFor="let role of aboutPage.title.role">{{ role }}</span>
         </div>
         <div class="title-about-page">
-          <span>D</span>
-          <span>e</span>
-          <span>s</span>
-          <span>e</span>
-          <span>n</span>
-          <span>v</span>
-          <span>o</span>
-          <span>l</span>
-          <span>v</span>
-          <span>e</span>
-          <span>d</span>
-          <span>o</span>
-          <span>r</span>
+          <span *ngFor="let job of aboutPage.title.job">{{ job }}</span>
         </div>
         <div class="title-about-page">
-          <span>W</span>
-          <span>e</span>
-          <span>b</span>
+          <span *ngFor="let profession of aboutPage.title.profession">{{ profession }}</span>
         </div>
       </h1>
 
       <div class="subtitle-about-page animate__animated animate__fadeInUp animate__delay-1s">
-      <span>
-        Front End Specialist / Angular & TypeScript Expert /
-        NgRx Enthusiast / React Learner / Testing with Cypress
-        & Karma
-      </span>
+        <span>{{ aboutPage.subtitle }}</span>
       </div>
     </div>
     <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
-      <span>
-        Profissionalmente imerso na indústria de desenvolvimento
-        web.
-      </span>
-      <span>
-        Sou um solucionador de problemas, altamente organizado,
-        leal e atento aos detalhes. Apaixonado por atividades ao ar
-        livre, videogames, filmes, séries, e, claro, programação.
-      </span>
-      <span>
-        Estou sempre buscando expandir meu conhecimento no universo
-        front-end e colaborando em projetos desafiadores com pessoas
-        incríveis.
-      </span>
+      <span>{{ aboutPage.description[0] }}</span>
+      <span>{{ aboutPage.description[1] }}</span>
+      <span>{{ aboutPage.description[2] }}</span>
     </div>
   </div>
 </div>
