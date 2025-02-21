@@ -1,4 +1,4 @@
-<div id="container-about-page">
+<div id="container-about-page" [attr.inert]="isOpen ? '' : null">
   <div class="about-bg">
     <img [ngSrc]="aboutPage.image.src" [alt]="aboutPage.image.alt" [title]="aboutPage.image.title" height="1140"
          width="980">
@@ -31,9 +31,16 @@
       </div>
     </div>
     <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
-      <span>{{ aboutPage.description[0] }}</span>
-      <span>{{ aboutPage.description[1] }}</span>
-      <span>{{ aboutPage.description[2] }}</span>
+      <ng-container *ngIf="!isMobile; else readMoreButton">
+        <span>{{ aboutPage.description[0] }}</span>
+        <span>{{ aboutPage.description[1] }}</span>
+        <span>{{ aboutPage.description[2] }}</span>
+      </ng-container>
+
+      <ng-template #readMoreButton>
+        <span>{{ aboutPage.description[0] }}</span>
+        <button mat-button class="read-more-button" (click)="openReadMoreDialog()">Ler mais</button>
+      </ng-template>
     </div>
   </div>
 </div>

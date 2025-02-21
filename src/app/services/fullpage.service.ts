@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 declare var fullpage: any;
 
@@ -7,6 +7,8 @@ declare var fullpage: any;
 })
 export class FullpageService {
   public fullpageInstance: any;
+  private currentSection: string | null = null;
+
 
   public initializeFullpage(): void {
     if (typeof fullpage !== 'undefined') {
@@ -31,6 +33,32 @@ export class FullpageService {
       });
     } else {
       console.error('Fullpage.js não foi carregado corretamente');
+    }
+  }
+
+  public pauseFullpage(): void {
+    if (this.fullpageInstance && this.fullpageInstance.getActiveSection) {
+      const currentSection = this.fullpageInstance.getActiveSection();
+      if (currentSection) {
+        this.currentSection = currentSection.anchor;
+      }
+      this.fullpageInstance.setAutoScrolling(false);
+      this.fullpageInstance.setKeyboardScrolling(false);
+    } else {
+      console.error('FullPage não foi inicializado corretamente');
+    }
+  }
+
+  public resumeFullpage(): void {
+    if (this.fullpageInstance) {
+      this.fullpageInstance.setAutoScrolling(true);
+      this.fullpageInstance.setKeyboardScrolling(true);
+
+      if (this.currentSection) {
+        this.fullpageInstance.moveTo(this.currentSection);
+      }
+    } else {
+      console.error('FullPage não foi inicializado corretamente');
     }
   }
 
