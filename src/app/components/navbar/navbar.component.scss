@@ -50,3 +50,26 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #container-navbar {
+    padding: 5px 25px;
+
+    .nav-left {
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .nav-right {
+      .contact-button {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
