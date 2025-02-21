@@ -43,7 +43,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 80px 0;
 
     span {
       text-align: center;
@@ -63,10 +62,71 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 
     img {
+      object-fit: contain;
       margin: 10px;
-      --animate-delay: 0.5s;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #container-skill-page {
+    h1 {
+      .title-skill-page {
+        span {
+          font-size: 32px !important;
+        }
+      }
+    }
+
+    .description-skill-page {
+      font-size: 18px;
+      max-width: 95%;
+    }
+
+    .skills-page {
+      max-width: 95%;
+
+      img {
+        height: 50px !important;
+        width: 50px !important;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px), (max-height: 600px) {
+  #container-skill-page {
+    min-width: 270px;
+    justify-content: space-evenly;
+    padding: 100px 0;
+
+    h1 {
+      .title-skill-page {
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    .description-skill-page {
+      font-size: 14px;
+      max-width: 90%;
+    }
+
+    .skills-page {
+      max-width: 90%;
+      gap: 0;
+
+      img {
+        height: 30px !important;
+        width: 30px !important;
+        margin: 5px;
+      }
     }
   }
 }
