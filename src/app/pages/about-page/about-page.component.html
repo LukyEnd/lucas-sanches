@@ -31,16 +31,9 @@
       </div>
     </div>
     <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
-      <ng-container *ngIf="!isMobile; else readMoreButton">
         <span>{{ aboutPage.description[0] }}</span>
         <span>{{ aboutPage.description[1] }}</span>
         <span>{{ aboutPage.description[2] }}</span>
-      </ng-container>
-
-      <ng-template #readMoreButton>
-        <span>{{ aboutPage.description[0] }}</span>
-        <button mat-button class="read-more-button" (click)="openReadMoreDialog()">Ler mais</button>
-      </ng-template>
     </div>
   </div>
 </div>

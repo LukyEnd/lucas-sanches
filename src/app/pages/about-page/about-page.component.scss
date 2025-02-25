@@ -21,24 +21,20 @@
   }
 
   .about-content {
-    position: relative;
     width: 100%;
-    max-width: 70%;
     z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 50px;
-    padding: 35px;
 
     .about-box {
       width: 100%;
-      max-width: 800px;
-      min-width: 300px;
+      min-width: 350px;
+      padding: 0 10px 0 0;
 
       .subtitle-about-page {
-        padding: 20px 0;
+        padding: 10px 0;
         font-family: var(--font-secondary), sans-serif;
         font-size: var(--font-size-medium);
         line-height: 24px;
@@ -47,33 +43,20 @@
     }
 
     .description-about-page {
-      max-width: 600px;
-      min-width: 400px;
-
-      .read-more-button {
-        width: 100%;
-        color: var(--highlight-color);
-        font: inherit;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        font-size: var(--font-size-medium);
-        font-weight: 600;
-        letter-spacing: 1px;
-        transition: color 0.3s ease-in-out;
-      }
+      height: 310px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
 
       span {
         display: block;
-        margin-bottom: 15px;
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #container-about-page {
     h1 {
       .title-about-page {
@@ -91,11 +74,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 0;
 
       .about-box {
-        max-width: unset;
-        min-width: 190px;
+        min-width: unset;
 
         .subtitle-about-page {
           font-size: 14px;
@@ -103,8 +84,8 @@
       }
 
       .description-about-page {
-        max-width: unset;
-        min-width: 190px;
+        justify-content: space-evenly;
+        height: 280px;
 
         span {
           font-size: 14px;
