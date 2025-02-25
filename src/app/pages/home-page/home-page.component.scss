@@ -36,12 +36,12 @@
     }
 
     .button-about-me-home-page {
+      color: var(--highlight-color);
       width: 100%;
-      height: var(--button-height);
+      height: 30px;
       padding: 0;
       background: none;
       border: none;
-      color: var(--highlight-color);
       font: inherit;
       cursor: pointer;
       display: flex;
@@ -110,23 +110,24 @@
       }
 
       span {
-        font-size: 24px !important;
+        font-size: var(--font-size-large-mobile) !important;
       }
     }
 
     .base-info-home-page {
-      height: auto;
+      height: 300px;
       min-width: 350px;
       padding-top: 0;
+      justify-content: space-between;
 
       .description-home-page {
         margin: 0;
         padding: 5px 0;
-        font-size: 14px;
+        font-size: var(--font-size-small-mobile);
       }
 
       .button-about-me-home-page {
-        font-size: 14px;
+        font-size: var(--font-size-small-mobile);
       }
     }
 

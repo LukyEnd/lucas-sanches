@@ -1,16 +1,25 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 :root {
+  //Color
   --primary-bg-color: rgb(20, 20, 22);
   --text-color: white;
-  --font-main: "Source Code Pro";
-  --font-secondary: "Source Sans Pro", sans-serif;
   --highlight-color: #04b2c6;
-  --description-color: #D3D3D3;
-  --button-height: 30px;
-  --font-size-large: 39px;
+  --subitle-color: rgba(211, 211, 211, 0.65);
+
+  //Font
+  --font-main: "Source Code Pro";
+  --font-secondary: "Source Sans Pro";
+
+  //Desktop
+  --font-size-large: 40px;
   --font-size-medium: 18px;
-  --font-size-small: 40px;
+  --font-size-small: 16px;
+
+  //Mobile
+  --font-size-large-mobile: 24px;
+  --font-size-medium-mobile: 16px;
+  --font-size-small-mobile: 14px;
 }
 
 .fp-watermark {

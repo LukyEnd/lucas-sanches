@@ -18,14 +18,14 @@
       {{ dataContactPage.description }}
     </span>
     <div class="contact-details animate__animated animate__slideInBottom animate__delay-2s">
-      <a [href]="dataContactPage.linkedinUser" target="_blank">
-        <img ngSrc="assets/linkedin.png" alt="LinkedIn" height="55" width="55">
-      </a>
       <a [href]="'mailto:' + dataContactPage.emailUser">
         <img ngSrc="assets/email.png" alt="Email" height="60" width="60">
       </a>
       <a [href]="dataContactPage.githubUser" target="_blank">
         <img ngSrc="assets/skills/github.png" alt="GitHub" height="60" width="60">
+      </a>
+      <a [href]="dataContactPage.linkedinUser" target="_blank">
+        <img ngSrc="assets/linkedin.png" alt="LinkedIn" height="60" width="60">
       </a>
     </div>
   </div>

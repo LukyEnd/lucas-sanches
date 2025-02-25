@@ -15,12 +15,17 @@
     }
 
     .contact-details {
-      font-size: 18px;
       width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
+
+      a {
+        img {
+          margin-right: 20px;
+        }
+      }
     }
   }
 }
@@ -32,7 +37,7 @@
     h1 {
       .title-contact-page {
         span {
-          font-size: 24px !important;
+          font-size: var(--font-size-large-mobile) !important;
         }
       }
     }
@@ -56,7 +61,18 @@
 
       .description-contact-page {
         margin: 0;
-        font-size: 14px;
+        font-size: var(--font-size-small-mobile) !important;
+      }
+
+      .contact-details {
+        padding-top: 20px;
+
+        a {
+          img {
+            width: 35px;
+            height: 35px;
+          }
+        }
       }
     }
   }
