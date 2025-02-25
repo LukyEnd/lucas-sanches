@@ -1,0 +1,56 @@
+{
+  "title": {
+    "greeting": [
+      "H",
+      "e",
+      "l",
+      "l",
+      "o",
+      ","
+    ],
+    "introduction": [
+      "I",
+      "'",
+      "m"
+    ],
+    "name": [
+      "L",
+      "u",
+      "c",
+      "a",
+      "s",
+      ","
+    ],
+    "role": [
+      "A",
+      "m"
+    ],
+    "job": [
+      "D",
+      "e",
+      "v",
+      "e",
+      "l",
+      "o",
+      "p",
+      "e",
+      "r"
+    ],
+    "profession": [
+      "W",
+      "e",
+      "b"
+    ]
+  },
+  "subtitle": "Front End Specialist / Angular & TypeScript Expert / NgRx Enthusiast / React Learner / Testing with Cypress & Karma",
+  "description": [
+    "Professionally immersed in the web development industry.",
+    "I'm a problem solver, highly organized, loyal, and detail-oriented. Passionate about outdoor activities, video games, movies, TV shows, and, of course, programming.",
+    "I am always looking to expand my knowledge in the front-end universe and collaborate on challenging projects with amazing people."
+  ],
+  "image": {
+    "src": "assets/home/PCsemFundo.png",
+    "alt": "My Photo",
+    "title": "My Photo"
+  }
+}

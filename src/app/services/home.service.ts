@@ -5,7 +5,7 @@ import {HomePageModel} from "../models/data-home-page.model";
   providedIn: 'root'
 })
 export class HomeService {
-  private homePageData: HomePageModel = require('./json/pt/data-home-page.json');
+  private homePageData: HomePageModel = require('./json/pt/data-home-page.pt.json');
 
   public getHomePageData(): HomePageModel {
     return this.homePageData;

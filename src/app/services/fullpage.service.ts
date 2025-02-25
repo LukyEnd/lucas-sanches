@@ -9,7 +9,6 @@ export class FullpageService {
   public fullpageInstance: any;
   private currentSection: string | null = null;
 
-
   public initializeFullpage(): void {
     if (typeof fullpage !== 'undefined') {
       this.fullpageInstance = new fullpage('#fullpage', {

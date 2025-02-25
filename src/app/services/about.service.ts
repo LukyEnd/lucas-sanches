@@ -5,7 +5,7 @@ import {DataAboutPageModel} from "../models/data-about-page.model";
   providedIn: 'root'
 })
 export class AboutService {
-  private aboutPageData: DataAboutPageModel = require('./json/pt/data-about-page.json');
+  private aboutPageData: DataAboutPageModel = require('./json/pt/data-about-page.pt.json');
 
   public getAboutPageData(): DataAboutPageModel {
     return this.aboutPageData;

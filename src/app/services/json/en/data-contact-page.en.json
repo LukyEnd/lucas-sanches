@@ -1,0 +1,26 @@
+{
+  "title": {
+    "contact": [
+      "C",
+      "o",
+      "n",
+      "t",
+      "a",
+      "c",
+      "t"
+    ],
+    "action": [
+      "C",
+      "h",
+      "a",
+      "t",
+      "!"
+    ]
+  },
+  "description": "If you're ready to start a new project, discuss ideas, or even just have a chat, I'm available. Feel free to reach out to me!",
+  "emailUser": "sanchesluka31@gmail.com",
+  "image": {
+    "src": "/assets/home/PCsemFundo.png",
+    "alt": "Contact Image"
+  }
+}

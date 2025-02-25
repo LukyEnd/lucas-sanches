@@ -5,7 +5,7 @@ import {DataContactPageModel} from "../models/data-contact-page.model";
   providedIn: 'root'
 })
 export class ContactService {
-  private contactPageData: DataContactPageModel = require('./json/pt/data-contact-page.json');
+  private contactPageData: DataContactPageModel = require('./json/pt/data-contact-page.pt.json');
 
   public getContactPageData(): DataContactPageModel {
     return this.contactPageData;

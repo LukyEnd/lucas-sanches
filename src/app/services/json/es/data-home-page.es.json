@@ -1,0 +1,52 @@
+{
+  "title": {
+    "frontEnd": [
+      "F",
+      "r",
+      "o",
+      "n",
+      "t",
+      "-",
+      "E",
+      "n",
+      "d"
+    ],
+    "software": [
+      "S",
+      "o",
+      "f",
+      "t",
+      "w",
+      "a",
+      "r",
+      "e"
+    ],
+    "developer": [
+      "D",
+      "e",
+      "v",
+      "e",
+      "l",
+      "o",
+      "p",
+      "e",
+      "r"
+    ]
+  },
+  "description": [
+    "Transformo desafíos en soluciones prácticas y eficientes, creando interfaces limpias e interactivas. Enfocado en el desarrollo de aplicaciones web rápidas, responsivas y adaptables, siempre buscando una experiencia digital fluida e innovadora."
+  ],
+  "aboutMe": "Sobre mí",
+  "backgroundImage": {
+    "alt": "Imagen de fondo",
+    "src": "assets/home/bottom-code.png"
+  },
+  "mainImage": {
+    "alt": "Mi foto",
+    "src": "assets/home/PCsemFundo.png"
+  },
+  "iconImage": {
+    "alt": "Ícono de desarrollador",
+    "src": "assets/home/desenvolvedor.png"
+  }
+}
