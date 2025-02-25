@@ -5,8 +5,10 @@ export class DataContactPageModel {
   constructor(
     public title: TitleContactPageModel,
     public description: string,
+    public image: ImagePageModel,
     public emailUser: string,
-    public image: ImagePageModel
+    public linkedinUser?: string,
+    public githubUser?: string,
   ) {
   }
 }

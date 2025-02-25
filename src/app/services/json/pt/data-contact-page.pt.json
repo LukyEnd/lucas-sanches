@@ -22,6 +22,8 @@
   },
   "description": "Se você está pronto para iniciar um novo projeto, discutir ideias ou mesmo só para um bate-papo, estou à disposição. Fique à vontade para entrar em contato comigo!",
   "emailUser": "sanchesluka31@gmail.com",
+  "linkedinUser": "https://www.linkedin.com/in/lucas-sanches-cavalheiro/",
+  "githubUser": "https://github.com/LukyEnd",
   "image": {
     "src": "/assets/home/PCsemFundo.png",
     "alt": "Imagem de contato"
