@@ -1,0 +1,15 @@
+<div id="container-experience-container">
+  <div class="base-experience-container">
+    <div *ngFor="let experience of experiences" class="experience-card" (click)="openModal(experience)">
+      <h3>{{ experience.title }}</h3>
+      <span>{{ experience.data }}</span>
+    </div>
+  </div>
+  <app-modal-experiences-details
+    *ngIf="modalOpen"
+    [selectedExperiences]="selectedExperiences"
+    (close)="closeModal()">
+  </app-modal-experiences-details>
+</div>
+
+

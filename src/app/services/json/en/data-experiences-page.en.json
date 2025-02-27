@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Queue Reduction and Sales Increase",
+    "data": "June 2023 - April 2024",
+    "description": "Implementation of improvements in the payment system.",
+    "details": "I worked on optimizing the payment flow, allowing transactions to be completed directly at the counter. This change drastically reduced queues and had a positive impact on sales."
+  },
+  {
+    "title": "Bug Fixing and Quality Assurance",
+    "data": "June 2023 - April 2024",
+    "description": "Identifying and fixing issues before release.",
+    "details": "I conducted continuous testing and anticipated potential problems to ensure a more stable and secure code delivery, minimizing failures in production."
+  },
+  {
+    "title": "User Experience Improvement",
+    "data": "June 2023 - April 2024",
+    "description": "Optimization of interfaces for new systems.",
+    "details": "I worked on the usability of new flows, making the interface more intuitive and efficient, facilitating the adoption of new functionalities by users."
+  },
+  {
+    "title": "Code Review and Code Quality",
+    "data": "June 2023 - April 2024",
+    "description": "Code review to ensure reliability and performance.",
+    "details": "I actively participated in code reviews, identifying potential issues and suggesting improvements to maintain clean and efficient code."
+  },
+  {
+    "title": "Development of an Internal Platform for Startups",
+    "data": "July 2021 - June 2023",
+    "description": "Creation of an internal system for startup management.",
+    "details": "I developed a web platform for startup management, eliminating the need for paid software and providing greater autonomy to the process."
+  },
+  {
+    "title": "AI Exploration for Document Processing",
+    "data": "July 2021 - June 2023",
+    "description": "Automated conversion of PDFs into structured strings.",
+    "details": "I implemented an AI-based process to automatically interpret documents, reducing manual work and increasing efficiency in data analysis."
+  },
+  {
+    "title": "Front-end Development on the Institutional Website",
+    "data": "July 2021 - June 2023",
+    "description": "Worked on the website interface using Angular and NgRx.",
+    "details": "I collaborated on building and improving the front-end using Angular, NgRx, and RxJS, implementing automated testing to ensure quality."
+  },
+  {
+    "title": "Continuous Technical Skill Improvement",
+    "data": "July 2021 - June 2023",
+    "description": "Participation in courses and training.",
+    "details": "I continuously sought training in development, best practices, automated testing, and modern technologies to enhance my skills."
+  },
+  {
+    "title": "Store Management and Multifunctional Support",
+    "data": "September 2015 - November 2019",
+    "description": "Store management and operational support.",
+    "details": "I managed inventory, purchases, and logistics, as well as assisted in customer service as a cashier and store attendant to ensure the unit's smooth operation."
+  },
+  {
+    "title": "IT Management and Technical Support",
+    "data": "September 2015 - November 2019",
+    "description": "Maintenance and support of IT infrastructure.",
+    "details": "I performed hardware diagnostics and repairs, configured networks and systems, ensuring continuous operation and emergency support."
+  },
+  {
+    "title": "Camera and CCTV Monitoring",
+    "data": "September 2015 - November 2019",
+    "description": "Security supervision through video surveillance.",
+    "details": "I managed the security camera system, ensuring operational integrity and assisting in incident prevention."
+  }
+]

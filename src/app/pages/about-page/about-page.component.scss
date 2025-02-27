@@ -1,4 +1,6 @@
 #container-about-page {
+  padding: 5vh 8vw !important;
+
   .about-bg {
     position: absolute;
     width: 100%;
@@ -54,6 +56,13 @@
       span {
         display: block;
       }
+    }
+
+    .buttons-about-page {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

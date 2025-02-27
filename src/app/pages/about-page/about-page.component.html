@@ -1,39 +1,48 @@
-<div id="container-about-page" [attr.inert]="isOpen ? '' : null">
+<div id="container-about-page">
   <div class="about-bg">
-    <img [ngSrc]="aboutPage.image.src" [alt]="aboutPage.image.alt" [title]="aboutPage.image.title" height="1140"
+    <img [ngSrc]="aboutPage.image.src"
+         [alt]="aboutPage.image.alt"
+         [title]="aboutPage.image.title"
+         height="1140"
          width="980">
   </div>
-  <div class="about-content animate__animated animate__fade">
-    <div class="about-box">
-      <h1 class="font-60">
-        <div class="title-about-page">
-          <span *ngFor="let greeting of aboutPage.title.greeting">{{ greeting }}</span>
+  <div class="slide">
+    <div class="about-content animate__animated animate__fade">
+      <div class="about-box">
+        <h1 class="font-60">
+          <div class="title-about-page">
+            <span *ngFor="let greeting of aboutPage.title.greeting">{{ greeting }}</span>
+          </div>
+          <div class="title-about-page">
+            <span *ngFor="let introduction of aboutPage.title.introduction">{{ introduction }}</span>
+          </div>
+          <div class="title-about-page">
+            <span *ngFor="let name of aboutPage.title.name">{{ name }}</span>
+          </div>
+          <div class="title-about-page">
+            <span *ngFor="let role of aboutPage.title.role">{{ role }}</span>
+          </div>
+          <div class="title-about-page">
+            <span *ngFor="let job of aboutPage.title.job">{{ job }}</span>
+          </div>
+          <div class="title-about-page">
+            <span *ngFor="let profession of aboutPage.title.profession">{{ profession }}</span>
+          </div>
+        </h1>
+        <div class="subtitle-about-page animate__animated animate__fadeInUp animate__delay-1s">
+          <span>{{ aboutPage.subtitle }}</span>
         </div>
-        <div class="title-about-page">
-          <span *ngFor="let introduction of aboutPage.title.introduction">{{ introduction }}</span>
-        </div>
-        <div class="title-about-page">
-          <span *ngFor="let name of aboutPage.title.name">{{ name }}</span>
-        </div>
-        <div class="title-about-page">
-          <span *ngFor="let role of aboutPage.title.role">{{ role }}</span>
-        </div>
-        <div class="title-about-page">
-          <span *ngFor="let job of aboutPage.title.job">{{ job }}</span>
-        </div>
-        <div class="title-about-page">
-          <span *ngFor="let profession of aboutPage.title.profession">{{ profession }}</span>
-        </div>
-      </h1>
-
-      <div class="subtitle-about-page animate__animated animate__fadeInUp animate__delay-1s">
-        <span>{{ aboutPage.subtitle }}</span>
       </div>
-    </div>
-    <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
-        <span>{{ aboutPage.description[0] }}</span>
+      <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
         <span>{{ aboutPage.description[1] }}</span>
         <span>{{ aboutPage.description[2] }}</span>
+      </div>
     </div>
+  </div>
+  <div class="slide">
+    <app-training-page></app-training-page>
+  </div>
+  <div class="slide">
+    <app-professional-experiences-page></app-professional-experiences-page>
   </div>
 </div>
