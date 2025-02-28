@@ -1,7 +1,7 @@
 <div id="container-training-page">
   <div class="base-training-page">
-    <h1>{{ trainingData.titleObject }}</h1>
-    <div *ngFor="let item of trainingData.data" class="flip-card">
+    <h1 class="animate__animated animate__fadeIn">{{ trainingData.titleObject }}</h1>
+    <div *ngFor="let item of trainingData.data" class="flip-card animate__animated animate__zoomIn">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <img [src]="item?.image" [alt]="item.title" width="300" height="250">

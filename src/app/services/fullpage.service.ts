@@ -1,4 +1,5 @@
-import {Injectable} from '@angular/core';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
+import {isPlatformBrowser} from "@angular/common";
 
 declare var fullpage: any;
 
@@ -8,6 +9,9 @@ declare var fullpage: any;
 export class FullpageService {
   public fullpageInstance: any;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+  }
+
   public initializeFullpage(): void {
     if (typeof fullpage !== 'undefined') {
       this.fullpageInstance = new fullpage('#fullpage', {
@@ -15,10 +19,10 @@ export class FullpageService {
         // Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['home', 'about', 'training', 'experiences', 'skills', 'projects', 'contact'],
+        anchors: ['home', 'about', 'skills', 'projects', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Inicial', 'Sobre mim', 'Experiências', 'Habilidades', 'Projetos', 'Contato'],
+        navigationTooltips: ['Inicial', 'Sobre mim', 'Projetos', 'Contato'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -35,9 +39,9 @@ export class FullpageService {
         loopBottom: false,
         loopTop: false,
         offsetSections: false,
-        resetSliders: false,
-        normalScrollElements: '#container-about-page, .description-about-page',
-        scrollOverflowMacStyle: false,
+        resetSliders: true,
+        // normalScrollElements: '#container-about-page, .description-about-page',
+        scrollOverflowMacStyle: true,
         scrollOverflowReset: false,
         skipIntermediateItems: false,
         touchSensitivity: 15,
@@ -66,13 +70,16 @@ export class FullpageService {
           document.querySelector('.fp-arrow.fp-next')?.classList.toggle('hidden', destination.index === totalSlides - 1);
         }
       });
+      this.updateArrowVisibility();
     } else {
       console.error('Fullpage.js não foi carregado corretamente');
     }
+    this.updateArrowVisibility();
   }
 
   public moveToSection(section: string): void {
     if (this.fullpageInstance) {
+      window.location.hash = `#${section}`;
       this.fullpageInstance.moveTo(section);
     } else {
       console.error('Fullpage.js não foi inicializado');
@@ -112,5 +119,13 @@ export class FullpageService {
       element.style.visibility = 'hidden';
       element.style.opacity = '0';
     });
+  }
+
+  private updateArrowVisibility(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const firstSlide = document.querySelector('.slide:first-child');
+    const lastSlide = document.querySelector('.slide:last-child');
+    document.querySelector('.fp-arrow.fp-prev')?.classList.toggle('hidden', true);
+    document.querySelector('.fp-arrow.fp-next')?.classList.toggle('hidden', lastSlide === firstSlide);
   }
 }

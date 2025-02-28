@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
     img {
       width: 100%;
@@ -33,7 +32,6 @@
     .about-box {
       width: 100%;
       max-width: 755px;
-      padding: 0 20px 0 0;
 
       .subtitle-about-page {
         color: var(--subitle-color);

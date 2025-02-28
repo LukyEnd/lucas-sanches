@@ -1,8 +1,8 @@
 <div id="container-experience-container">
-  <h1>{{ experiences.titleObject }}</h1>
+  <h1 class="animate__animated animate__fadeIn">{{ experiences.titleObject }}</h1>
   <div class="base-experience-container">
     <div *ngFor="let experience of experiences.data"
-         class="experience-card"
+         class="experience-card animate__animated animate__bounceIn"
          (click)="openModal(experience)">
       <h3>{{ experience.title }}</h3>
     </div>
@@ -13,5 +13,3 @@
     (close)="closeModal()">
   </app-modal-experiences-details>
 </div>
-
-
