@@ -1,8 +1,10 @@
 <div id="container-experience-container">
+  <h1>{{ experiences.titleObject }}</h1>
   <div class="base-experience-container">
-    <div *ngFor="let experience of experiences" class="experience-card" (click)="openModal(experience)">
+    <div *ngFor="let experience of experiences.data"
+         class="experience-card"
+         (click)="openModal(experience)">
       <h3>{{ experience.title }}</h3>
-      <span>{{ experience.data }}</span>
     </div>
   </div>
   <app-modal-experiences-details

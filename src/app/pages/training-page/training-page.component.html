@@ -1,3 +1,16 @@
 <div id="container-training-page">
-  <p>training-page works!</p>
+  <div class="base-training-page">
+    <h1>{{ trainingData.titleObject }}</h1>
+    <div *ngFor="let item of trainingData.data" class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img [src]="item?.image" [alt]="item.title" width="300" height="250">
+        </div>
+        <div class="flip-card-back">
+          <h3>{{ item.title }}</h3>
+          <span>{{ item.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

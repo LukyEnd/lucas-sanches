@@ -1,8 +1,9 @@
+import {DataObjectModel} from "./data-object.model";
+
 export class ExperienceModel {
   constructor(
-    public title: string,
-    public data: string,
-    public description: string,
-    public details: string
-  ) {}
+    public titleObject: string,
+    public data: DataObjectModel[]
+  ) {
+  }
 }

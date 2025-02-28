@@ -1,4 +1,6 @@
-[
+{
+  "titleObject": "Minhas Experiências Profissionais",
+  "data": [
   {
     "title": "Redução de Filas e Aumento de Vendas",
     "data": "Junho 2023 - Abril 2024",
@@ -66,3 +68,4 @@
     "details": "Gerenciei o sistema de câmeras de segurança, assegurando a integridade das operações e auxiliando na prevenção de incidentes."
   }
 ]
+}

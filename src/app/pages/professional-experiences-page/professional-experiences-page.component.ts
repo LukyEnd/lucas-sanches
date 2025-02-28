@@ -5,6 +5,7 @@ import {
 } from "../../components/modal-experiences-details/modal-experiences-details.component";
 import {ExperienceModel} from "../../models/experience.model";
 import {AboutService} from "../../services/about.service";
+import {DataObjectModel} from "../../models/data-object.model";
 
 @Component({
   selector: 'app-professional-experiences-page',
@@ -18,15 +19,15 @@ import {AboutService} from "../../services/about.service";
   styleUrl: './professional-experiences-page.component.scss'
 })
 export class ProfessionalExperiencesPageComponent {
-  public experiences: ExperienceModel[];
-  public selectedExperiences!: ExperienceModel;
+  public experiences: ExperienceModel;
+  public selectedExperiences!: DataObjectModel;
   public modalOpen: boolean = false;
 
   constructor(private serviceAbout: AboutService) {
     this.experiences = this.serviceAbout.getExperiencesPageData();
   }
 
-  public openModal(experiences: ExperienceModel): void {
+  public openModal(experiences: DataObjectModel): void {
     this.selectedExperiences = experiences;
     this.modalOpen = true;
   }

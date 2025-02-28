@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {ExperienceModel} from "../../models/experience.model";
+import {DataObjectModel} from "../../models/data-object.model";
 
 @Component({
   selector: 'app-modal-experiences-details',
@@ -12,7 +12,7 @@ import {ExperienceModel} from "../../models/experience.model";
   styleUrl: './modal-experiences-details.component.scss'
 })
 export class ModalExperiencesDetailsComponent {
-  @Input() public selectedExperiences!: ExperienceModel;
+  @Input() public selectedExperiences!: DataObjectModel;
   @Output() public close = new EventEmitter<void>();
 
   public closeModal(): void {
