@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {NgClass, NgForOf, NgOptimizedImage} from "@angular/common";
 import {ProjectModel} from "../../../models/data-project.model";
