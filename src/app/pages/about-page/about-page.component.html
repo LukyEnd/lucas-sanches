@@ -6,7 +6,7 @@
          height="1140"
          width="980">
   </div>
-  <div class="slide">
+  <div class="slide teste">
     <div class="about-content animate__animated animate__fade">
       <div class="about-box">
         <h1 class="font-60">
@@ -36,9 +36,15 @@
       <div class="description-about-page animate__animated animate__fadeInUp animate__delay-2s">
         <span>{{ aboutPage.description[1] }}</span>
         <span>{{ aboutPage.description[2] }}</span>
+        <div class="button-container">
+          <button (click)="goToPersonalDevelopment()" class="btn">Desenvolvimento Pessoal</button>
+          <button (click)="goToProfessionalExperience()" class="btn">Experiência Profissional</button>
+        </div>
       </div>
     </div>
   </div>
+
+
   <div class="slide">
     <app-training-page></app-training-page>
   </div>

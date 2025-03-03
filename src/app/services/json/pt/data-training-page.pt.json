@@ -2,7 +2,7 @@
   "titleObject": "Desenvolvimento Pessoal e Profissional",
   "data": [
     {
-      "title": "Bacharelado em Tecnologia da Informação/Sistemas da Informação",
+      "title": "Bacharelado em Sistemas da Informação",
       "data": "Dezembro 2026 (Cursando)",
       "description": "FACCAT - Faculdades Integradas de Taquara",
       "details": "Atualmente cursando Bacharelado em Tecnologia da Informação/Sistemas da Informação, adquirindo conhecimentos sobre desenvolvimento de software, banco de dados, redes e engenharia de software.",
@@ -55,7 +55,7 @@
       "data": "Atualmente",
       "description": "Desenvolvimento de projetos pessoais e busca por inovação",
       "details": "Tenho um grande interesse em desenvolver projetos pessoais para testar novas tecnologias e sempre busco aprimorar minhas habilidades em diferentes áreas da tecnologia.",
-      "image": "assets/training/tecnologia.jpeg"
+      "image": "assets/training/tecnologia.png"
     },
     {
       "title": "Trabalho em Equipes Ágeis",

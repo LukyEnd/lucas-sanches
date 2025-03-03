@@ -22,7 +22,7 @@ export class FullpageService {
         anchors: ['home', 'about', 'skills', 'projects', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Inicial', 'Sobre mim', 'Projetos', 'Contato'],
+        navigationTooltips: ['Inicial', 'Sobre mim','Experiências', 'Projetos', 'Contato'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',

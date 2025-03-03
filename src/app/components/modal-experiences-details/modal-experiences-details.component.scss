@@ -13,7 +13,9 @@
   transform: translateX(0%);
 
   .modal-content {
-    background: rgba(20, 20, 22, 0.9);
+    //background: rgba(20, 20, 22, 0.9);
+    background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+
     color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
@@ -25,18 +27,25 @@
 
     h2 {
       font-family: var(--font-main), sans-serif;
+      color: var(--highlight-color);
+      font-size: 28px;
     }
 
     span {
       font-family: var(--font-main), sans-serif;
       font-size: var(--font-size-medium);
+      color: var(--subitle-color);
+      margin-top: 10px;
+      display: block;
     }
 
     ul {
       font-family: var(--font-main), sans-serif;
       font-size: var(--font-size-small);
+      color: var(--text-color);
       list-style: none;
       padding: 0;
+      margin-top: 15px;
     }
 
     button {
@@ -46,7 +55,7 @@
       border: none;
       padding: 12px 24px;
       cursor: pointer;
-      border-radius: 8px;
+      border-radius: 12px;
       font-size: var(--font-size-medium);
       transition: all 0.3s ease;
     }

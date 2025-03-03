@@ -22,8 +22,8 @@
 
     .flip-card {
       background-color: transparent;
-      width: 250px;
-      height: 200px;
+      width: 210px;
+      height: 330px;
       perspective: 1000px;
       display: flex;
       align-items: center;
@@ -40,50 +40,59 @@
         transition: transform 0.8s;
         transform-style: preserve-3d;
 
-        .flip-card-front, .flip-card-back {
+        .flip-card-front,
+        .flip-card-back {
           position: absolute;
           width: 100%;
           height: 100%;
           backface-visibility: hidden;
           border-radius: 15px;
           overflow: hidden;
-          background: linear-gradient(145deg, #2c3e50, #aeb4ba);
+          background: linear-gradient(145deg, #4E6E81, #A0B4C3);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           display: flex;
-          justify-content: center;
+          flex-direction: column;
+          justify-content: space-between;
           align-items: center;
+
+          h3 {
+            font-family: var(--font-family-secondary), sans-serif;
+            font-size: var(--font-size-medium);
+            margin-bottom: 10px;
+            color: #333;
+            padding: 0 20px;
+            height: 100px;
+          }
 
           img {
             width: 100%;
-            height: 100%;
+            height: 208px;
             object-fit: contain;
             object-position: center;
             padding: 10px;
             box-sizing: border-box;
+            border-bottom: 2px solid #08cbe1;
           }
 
           &.flip-card-back {
             box-sizing: border-box;
             height: 100%;
-            background: linear-gradient(145deg, #f0f0f0, #cfcfcf);
-            color: #444;
+            background: linear-gradient(145deg, #D1D9E6, #A1B3C1);
+            color: #333;
             transform: rotateY(180deg);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 15px;
-
-            h3 {
-              font-family: var(--font-family-secondary), sans-serif;
-              font-size: var(--font-size-medium);
-              margin-bottom: 10px;
-            }
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
 
             span {
               font-family: var(--font-family-secondary), sans-serif;
               font-size: var(--font-size-small);
+              color: #555;
             }
           }
         }

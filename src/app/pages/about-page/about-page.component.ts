@@ -6,6 +6,7 @@ import {TrainingPageComponent} from "../training-page/training-page.component";
 import {
   ProfessionalExperiencesPageComponent
 } from "../professional-experiences-page/professional-experiences-page.component";
+import {FullpageService} from "../../services/fullpage.service";
 
 @Component({
   selector: 'app-about-page',
@@ -24,7 +25,16 @@ export class AboutPageComponent {
 
   constructor(
     private aboutPageService: AboutService,
+    private fullPageService: FullpageService,
   ) {
     this.aboutPage = this.aboutPageService.getAboutPageData();
+  }
+
+  public goToPersonalDevelopment() {
+    this.fullPageService.moveToSection('about/1');
+  }
+
+  public goToProfessionalExperience() {
+    this.fullPageService.moveToSection('about/2');
   }
 }

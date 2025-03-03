@@ -2,58 +2,67 @@
   "titleObject": "Desarrollo Personal y Profesional",
   "data": [
     {
-      "title": "Licenciatura en Tecnología de la Información/Sistemas de Información",
+      "title": "Licenciatura en Sistemas de Información",
       "data": "Diciembre 2026 (En curso)",
       "description": "FACCAT - Facultades Integradas de Taquara",
-      "details": "Actualmente cursando una Licenciatura en Tecnología de la Información/Sistemas de Información, adquiriendo conocimientos en desarrollo de software, bases de datos, redes e ingeniería de software."
+      "details": "Actualmente cursando la Licenciatura en Tecnología de la Información/Sistemas de Información, adquiriendo conocimientos sobre desarrollo de software, bases de datos, redes e ingeniería de software.",
+      "image": "assets/training/faccat.jpg"
     },
     {
-      "title": "Educación Técnica en Informática",
+      "title": "Técnico en Informática",
       "data": "Abril 2012 - Mayo 2012",
       "description": "Gigabyte Sul Informática",
-      "details": "Curso técnico en informática con enfoque en fundamentos de hardware, software y redes."
+      "details": "Curso técnico en informática con enfoque en fundamentos de hardware, software y redes.",
+      "image": "assets/training/gigabyteInfo.jpeg"
     },
     {
       "title": "Estudio de Flutter",
       "data": "Actualmente",
       "description": "Expandiendo conocimientos en desarrollo móvil",
-      "details": "Estoy estudiando Flutter para mejorar mis habilidades en desarrollo de aplicaciones móviles, explorando sus capacidades y aplicabilidad en proyectos reales."
+      "details": "Estoy estudiando Flutter para mejorar mis habilidades en el desarrollo de aplicaciones móviles, explorando sus capacidades y aplicabilidad en proyectos reales.",
+      "image": "assets/training/flutter.png"
     },
     {
       "title": "Exploración de .NET",
       "data": "Actualmente",
       "description": "Aprendizaje de back-end y ampliación de habilidades Full-Stack",
-      "details": "Estoy explorando .NET para comprender mejor el funcionamiento del back-end y expandir mis habilidades Full-Stack, enfocándome en la creación de APIs y servicios robustos."
+      "details": "Estoy explorando .NET para entender mejor el funcionamiento del back-end y ampliar mi conjunto de habilidades Full-Stack, con un enfoque en la creación de APIs y servicios robustos.",
+      "image": "assets/training/net.png"
     },
     {
       "title": "Proyectos en React",
       "data": "Actualmente",
       "description": "Profundización en la tecnología React",
-      "details": "He desarrollado proyectos en React para profundizar en la biblioteca y sigo mejorando mis habilidades en la gestión de estados, componentes y enrutamiento."
+      "details": "Ya he desarrollado proyectos en React para profundizar en la biblioteca y continúo mejorando mis habilidades en el manejo de estados, componentes y enrutamiento.",
+      "image": "assets/training/react.png"
     },
     {
       "title": "Proyecto con Vue.js",
       "data": "Actualmente",
       "description": "Perfeccionamiento en Vue.js",
-      "details": "Actualmente estoy trabajando en un proyecto con Vue.js para mejorar mi experiencia con frameworks modernos de JavaScript y su integración con APIs."
+      "details": "Actualmente, estoy trabajando en un proyecto con Vue.js para mejorar mi experiencia con frameworks JavaScript modernos y su integración con APIs.",
+      "image": "assets/training/vuejs.png"
     },
     {
       "title": "Proyectos en Java",
       "data": "Actualmente",
       "description": "Exploración del lenguaje Java",
-      "details": "Tengo pequeños proyectos en Java, explorando el lenguaje y su aplicabilidad, especialmente en sistemas de back-end e integración con bases de datos."
+      "details": "Tengo pequeños proyectos en Java, explorando el lenguaje y su aplicabilidad, especialmente en sistemas de back-end e integración con bases de datos.",
+      "image": "assets/training/java.png"
     },
     {
       "title": "Interés por Tecnología e Innovación",
       "data": "Actualmente",
       "description": "Desarrollo de proyectos personales y búsqueda de innovación",
-      "details": "Tengo un gran interés en desarrollar proyectos personales para probar nuevas tecnologías y siempre busco mejorar mis habilidades en diferentes áreas de la tecnología."
+      "details": "Tengo un gran interés en desarrollar proyectos personales para probar nuevas tecnologías y siempre busco mejorar mis habilidades en diferentes áreas de la tecnología.",
+      "image": "assets/training/tecnologia.png"
     },
     {
       "title": "Trabajo en Equipos Ágiles",
       "data": "Actualmente",
-      "description": "Actuación en equipos ágiles",
-      "details": "Estoy interesado en trabajar en equipos ágiles (Scrum, Kanban) para contribuir en entornos colaborativos e innovadores, priorizando la entrega continua y la mejora constante."
+      "description": "Trabajo en equipos ágiles",
+      "details": "Tengo interés en trabajar en equipos ágiles (Scrum, Kanban) para contribuir en ambientes colaborativos e innovadores, priorizando la entrega continua y la mejora constante.",
+      "image": "assets/training/equipe.jpeg"
     }
   ]
 }
