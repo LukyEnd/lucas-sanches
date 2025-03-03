@@ -1,23 +1,22 @@
-import {Component} from '@angular/core';
-import {NgClass, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import { Component } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {ProjectModel} from "../../models/data-project.model";
-import {ProjectsService} from "../../services/project.service";
+import {NgClass, NgForOf, NgOptimizedImage} from "@angular/common";
+import {ProjectModel} from "../../../models/data-project.model";
+import {ProjectsService} from "../../../services/project.service";
 
 @Component({
-  selector: 'app-project-card',
+  selector: 'app-project-card-slides-desktop',
   standalone: true,
   imports: [
-    NgForOf,
-    NgClass,
-    NgIf,
     MatIcon,
-    NgOptimizedImage
+    NgForOf,
+    NgOptimizedImage,
+    NgClass
   ],
-  templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.scss'
+  templateUrl: './project-card-slides-desktop.component.html',
+  styleUrl: './project-card-slides-desktop.component.scss'
 })
-export class ProjectCardComponent {
+export class ProjectCardSlidesDesktopComponent {
   public projects: ProjectModel[];
   public currentIndex: number = 0;
 
