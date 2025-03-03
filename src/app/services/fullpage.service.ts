@@ -40,7 +40,6 @@ export class FullpageService {
         loopTop: false,
         offsetSections: false,
         resetSliders: true,
-        // normalScrollElements: '#container-about-page, .description-about-page',
         scrollOverflowMacStyle: true,
         scrollOverflowReset: false,
         skipIntermediateItems: false,

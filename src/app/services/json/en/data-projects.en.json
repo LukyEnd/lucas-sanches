@@ -1,0 +1,32 @@
+[
+  {
+    "title": "LukyProductForm",
+    "description": "React application for product management, with a modern and responsive interface.",
+    "image": {
+      "src": "/assets/slides/cadaster-product.png",
+      "alt": "Image of the LukyProductForm project",
+      "title": "LukyProductForm"
+    },
+    "link": "https://github.com/LukyEnd/cadaster-product-react-vite"
+  },
+  {
+    "title": "Transport API Query - Porto Alegre",
+    "description": "Angular system for querying public transportation in Porto Alegre, integrating with the Bus and Lotação API and displaying routes on MAPBOX.",
+    "image": {
+      "src": "/assets/slides/app-poa.png",
+      "alt": "Image of the Transport API Query - Porto Alegre project",
+      "title": "Transport API Query - Porto Alegre"
+    },
+    "link": "https://github.com/LukyEnd/datapoa-angular-material-ngrx"
+  },
+  {
+    "title": "ApiRick",
+    "description": "Angular application that uses 'The Rick and Morty API' to provide information about characters, episodes, and locations from the animated series.",
+    "image": {
+      "src": "/assets/slides/rick.png",
+      "alt": "Image of the ApiRick project",
+      "title": "ApiRick"
+    },
+    "link": "https://github.com/LukyEnd/rick-and-morty-angular-ngrx"
+  }
+]

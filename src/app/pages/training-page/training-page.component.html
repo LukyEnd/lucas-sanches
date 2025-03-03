@@ -4,7 +4,7 @@
     <div *ngFor="let item of trainingData.data" class="flip-card animate__animated animate__zoomIn">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img [src]="item?.image" [alt]="item.title" width="300" height="250">
+          <img [src]="item?.image" [alt]="item.title">
         </div>
         <div class="flip-card-back">
           <h3>{{ item.title }}</h3>
