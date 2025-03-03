@@ -17,17 +17,17 @@
         <span *ngFor="let developer of homePageData.title.developer">{{ developer }}</span>
       </div>
     </h1>
-    <div class="description-home-page animate__animated animate__fadeInUp animate__delay-2s">
+    <div class="description-home-page animate__animated animate__fadeInUp animate__delay-1s">
       <span *ngFor="let paragraph of homePageData.description">{{ paragraph }}</span>
     </div>
-    <button class="button-about-me-home-page animate__animated animate__fadeInUp animate__delay-3s" (click)="toggle()">
+    <button class="button-about-me-home-page animate__animated animate__fadeInUp animate__delay-2s" (click)="toggle()">
       {{ homePageData.aboutMe }}
       <mat-icon>
         {{ isOpen ? 'keyboard_arrow_down' : 'chevron_right' }}
       </mat-icon>
     </button>
   </div>
-  <div class="image-home-page animate__animated animate__fadeInRight animate__delay-1s floating">
+  <div class="image-home-page floating">
     <img [ngSrc]="homePageData.mainImage.src"
          [alt]="homePageData.mainImage.alt"
          [title]="homePageData.mainImage.alt"
