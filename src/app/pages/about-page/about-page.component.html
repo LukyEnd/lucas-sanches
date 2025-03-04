@@ -37,8 +37,14 @@
         <span>{{ aboutPage.description[1] }}</span>
         <span>{{ aboutPage.description[2] }}</span>
         <div class="button-container">
-          <button (click)="goToPersonalDevelopment()" class="btn development">Desenvolvimento Pessoal</button>
-          <button (click)="goToProfessionalExperience()" class="btn">Experiência Profissional</button>
+          <button (click)="goToPersonalDevelopment()"
+                  class="btn development">
+            {{ randomTexts.personalDevelopment }}
+          </button>
+          <button (click)="goToProfessionalExperience()"
+                  class="btn">
+            {{ randomTexts.professionalExperience }}
+          </button>
         </div>
       </div>
     </div>

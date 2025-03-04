@@ -5,7 +5,9 @@ export class RandomTextModel {
     public home: string,
     public about: string,
     public experience: string,
-    public projects: string
+    public projects: string,
+    public personalDevelopment: string,
+    public professionalExperience: string
   ) {
   }
 }

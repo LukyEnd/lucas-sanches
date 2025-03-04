@@ -7,6 +7,8 @@ import {
   ProfessionalExperiencesPageComponent
 } from "../professional-experiences-page/professional-experiences-page.component";
 import {FullPageService} from "../../services/full-page.service";
+import {RandomTextsService} from "../../services/random-texts.service";
+import {RandomTextModel} from "../../models/data-random-text.model";
 
 @Component({
   selector: 'app-about-page',
@@ -22,12 +24,15 @@ import {FullPageService} from "../../services/full-page.service";
 })
 export class AboutPageComponent {
   public aboutPage: DataAboutPageModel;
+  public randomTexts: RandomTextModel
 
   constructor(
     private aboutPageService: AboutService,
     private fullPageService: FullPageService,
+    private randomTextsService: RandomTextsService
   ) {
     this.aboutPage = this.aboutPageService.getAboutPageData();
+    this.randomTexts = this.randomTextsService.getRandomText();
   }
 
   public goToPersonalDevelopment() {
