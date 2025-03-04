@@ -16,13 +16,15 @@ import {NgClass, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
   styleUrl: './project-card-slides-mobile.component.scss'
 })
 export class ProjectCardSlidesMobileComponent {
-  public projects: ProjectDataModel
+  public projects!: ProjectDataModel
   public activeIndex: number = 0;
   public isTransitioning: boolean = false;
   private touchStartX: number = 0;
 
   constructor(private projectsService: ProjectsService) {
-    this.projects = this.projectsService.getProjectsPageData();
+    this.projectsService.getProjectsPageData().subscribe((dataProject: ProjectDataModel) => {
+      this.projects = dataProject;
+    });
   }
 
   public nextSlide(): void {

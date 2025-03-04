@@ -19,12 +19,14 @@ import {DataObjectModel} from "../../models/data-object.model";
   styleUrl: './professional-experiences-page.component.scss'
 })
 export class ProfessionalExperiencesPageComponent {
-  public experiences: ExperienceModel;
+  public experiences!: ExperienceModel;
   public selectedExperiences!: DataObjectModel;
   public modalOpen: boolean = false;
 
   constructor(private serviceAbout: AboutService) {
-    this.experiences = this.serviceAbout.getExperiencesPageData();
+    this.serviceAbout.getExperiencesPageData().subscribe((dataExperience: ExperienceModel) => {
+      this.experiences = dataExperience;
+    });
   }
 
   public openModal(experiences: DataObjectModel): void {

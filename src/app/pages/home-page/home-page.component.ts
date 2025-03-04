@@ -17,15 +17,18 @@ import {HomeService} from "../../services/home.service";
   styleUrls: ['./home-page.component.scss', './../base.scss']
 })
 export class HomePageComponent {
-  public homePageData: HomePageModel;
+  public homePageData!: HomePageModel;
   public isOpen: boolean = false;
 
   constructor(
     private fullPageService: FullPageService,
     private homePageService: HomeService
   ) {
-    this.homePageData = this.homePageService.getHomePageData();
+    this.homePageService.getHomePageData().subscribe((dataHome: HomePageModel) => {
+      this.homePageData = dataHome;
+    });
   }
+
 
   public toggle(): void {
     this.isOpen = !this.isOpen;

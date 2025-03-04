@@ -16,9 +16,11 @@ import {DataSkillPageModel} from "../../models/data-skills-page.model";
   styleUrls: ['./skills-page.component.scss', './../base.scss']
 })
 export class SkillsPageComponent {
-  public dataSkillPage: DataSkillPageModel;
+  public dataSkillPage!: DataSkillPageModel;
 
   constructor(private skillsService: SkillsService) {
-    this.dataSkillPage = this.skillsService.dataPage();
+    this.skillsService.getSkillPageData().subscribe((dataSkill: DataSkillPageModel) => {
+      this.dataSkillPage = dataSkill;
+    });
   }
 }

@@ -2,58 +2,67 @@
   "titleObject": "Personal and Professional Development",
   "data": [
     {
-      "title": "Bachelor's Degree in Information Systems",
-      "data": "December 2026 (Ongoing)",
-      "description": "FACCAT - Integrated Colleges of Taquara",
-      "details": "Currently pursuing a Bachelor's degree in Information Technology/Information Systems, gaining knowledge in software development, databases, networks, and software engineering."
+      "title": "Bachelor's in Information Systems",
+      "data": "December 2026 (In Progress)",
+      "description": "FACCAT - Faculdades Integradas de Taquara",
+      "details": "Currently pursuing a Bachelor's in Information Technology/Information Systems, gaining knowledge in software development, databases, networking, and software engineering.",
+      "image": "assets/training/faccat.jpg"
     },
     {
       "title": "Technical High School in Computer Science",
       "data": "April 2012 - May 2012",
       "description": "Gigabyte Sul Informática",
-      "details": "Technical course in computer science focusing on hardware, software, and network fundamentals."
+      "details": "Technical course in computer science focusing on hardware fundamentals, software, and networks.",
+      "image": "assets/training/gigabyteInfo.jpeg"
     },
     {
       "title": "Flutter Study",
       "data": "Currently",
       "description": "Expanding knowledge in mobile development",
-      "details": "I am studying Flutter to improve my skills in mobile app development, exploring its capabilities and applicability in real projects."
+      "details": "I am studying Flutter to enhance my mobile app development skills, exploring its capabilities and applicability in real-world projects.",
+      "image": "assets/training/flutter.png"
     },
     {
-      "title": "Exploring .NET",
+      "title": "Exploration of .NET",
       "data": "Currently",
       "description": "Learning back-end and expanding Full-Stack skills",
-      "details": "I am exploring .NET to better understand back-end functionality and expand my Full-Stack skillset, focusing on creating APIs and robust services."
+      "details": "I am exploring .NET to better understand back-end development and expand my Full-Stack skill set, focusing on building robust APIs and services.",
+      "image": "assets/training/net.png"
     },
     {
       "title": "React Projects",
       "data": "Currently",
       "description": "Deepening knowledge in React technology",
-      "details": "I have developed projects in React to gain deeper expertise in the library, and I continue improving my skills in state management, components, and routing."
+      "details": "I have developed projects in React to deepen my understanding of the library and continue improving my skills in state management, components, and routing.",
+      "image": "assets/training/react.png"
     },
     {
       "title": "Vue.js Project",
       "data": "Currently",
-      "description": "Enhancing experience with Vue.js",
-      "details": "I am currently working on a project with Vue.js to refine my experience with modern JavaScript frameworks and their integration with APIs."
+      "description": "Improving Vue.js skills",
+      "details": "I am currently working on a project with Vue.js to enhance my experience with modern JavaScript frameworks and their integration with APIs.",
+      "image": "assets/training/vuejs.png"
     },
     {
       "title": "Java Projects",
       "data": "Currently",
       "description": "Exploring the Java language",
-      "details": "I have small projects in Java, exploring the language and its applicability, especially in back-end systems and database integration."
+      "details": "I have small projects in Java, exploring the language and its applicability, especially in back-end systems and database integration.",
+      "image": "assets/training/java.png"
     },
     {
       "title": "Interest in Technology and Innovation",
       "data": "Currently",
-      "description": "Developing personal projects and pursuing innovation",
-      "details": "I have a great interest in developing personal projects to test new technologies and continuously improve my skills in different areas of technology."
+      "description": "Developing personal projects and seeking innovation",
+      "details": "I have a strong interest in developing personal projects to test new technologies and always seek to improve my skills in different areas of technology.",
+      "image": "assets/training/tecnologia.png"
     },
     {
       "title": "Working in Agile Teams",
       "data": "Currently",
-      "description": "Engagement in agile teams",
-      "details": "I am interested in working in agile teams (Scrum, Kanban) to contribute to collaborative and innovative environments, prioritizing continuous delivery and constant improvement."
+      "description": "Working in agile teams",
+      "details": "I am interested in working in agile teams (Scrum, Kanban) to contribute in collaborative and innovative environments, prioritizing continuous delivery and constant improvement.",
+      "image": "assets/training/equipe.jpeg"
     }
   ]
 }

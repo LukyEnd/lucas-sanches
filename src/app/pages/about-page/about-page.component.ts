@@ -23,23 +23,27 @@ import {RandomTextModel} from "../../models/data-random-text.model";
   styleUrls: ['./about-page.component.scss', './../base.scss']
 })
 export class AboutPageComponent {
-  public aboutPage: DataAboutPageModel;
-  public randomTexts: RandomTextModel
+  public aboutPage!: DataAboutPageModel;
+  public randomTexts!: RandomTextModel
 
   constructor(
     private aboutPageService: AboutService,
     private fullPageService: FullPageService,
     private randomTextsService: RandomTextsService
   ) {
-    this.aboutPage = this.aboutPageService.getAboutPageData();
-    this.randomTexts = this.randomTextsService.getRandomText();
+    this.aboutPageService.getAboutPageData().subscribe((dataAbout: DataAboutPageModel) => {
+      this.aboutPage = dataAbout;
+    });
+    this.randomTextsService.getRandomText().subscribe((dataRandom: RandomTextModel) => {
+      this.randomTexts = dataRandom;
+    });
   }
 
-  public goToPersonalDevelopment() {
+  public goToPersonalDevelopment(): void {
     this.fullPageService.moveToSection('about/1');
   }
 
-  public goToProfessionalExperience() {
+  public goToProfessionalExperience(): void {
     this.fullPageService.moveToSection('about/2');
   }
 }

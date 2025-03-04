@@ -16,10 +16,12 @@ import {RandomTextModel} from "../../models/data-random-text.model";
 export class ModalExperiencesDetailsComponent {
   @Input() public selectedExperiences!: DataObjectModel;
   @Output() public close = new EventEmitter<void>();
-  public randomTexts: RandomTextModel
+  public randomTexts!: RandomTextModel
 
   constructor(private randomTextsService: RandomTextsService) {
-    this.randomTexts = this.randomTextsService.getRandomText()
+    this.randomTextsService.getRandomText().subscribe((dataRandom: RandomTextModel) => {
+      this.randomTexts = dataRandom;
+    });
   }
 
   public closeModal(): void {

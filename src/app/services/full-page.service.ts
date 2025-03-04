@@ -10,19 +10,21 @@ declare var fullpage: any;
 })
 export class FullPageService {
   public fullPageInstance: any;
-  private randomText: RandomTextModel
+  private randomText!: RandomTextModel
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: any,
     private randomTextsService: RandomTextsService,
   ) {
-    this.randomText = this.randomTextsService.getRandomText();
+    this.randomTextsService.getRandomText().subscribe((dataRandom: RandomTextModel) => {
+      this.randomText = dataRandom;
+      this.updateFullPageTooltips();
+    });
   }
 
   public initializeFullPage(): void {
     if (typeof fullpage !== 'undefined') {
       this.fullPageInstance = new fullpage('#fullpage', {
-
         // Navigation
         menu: '#menu',
         lockAnchors: false,
@@ -91,10 +93,16 @@ export class FullPageService {
 
   public moveToSection(section: string): void {
     if (this.fullPageInstance) {
-      window.location.hash = `#${section}`;
       this.fullPageInstance.moveTo(section);
     } else {
       console.error('Fullpage.js não foi inicializado');
+    }
+  }
+
+  private updateFullPageTooltips(): void {
+    if (this.fullPageInstance) {
+      this.fullPageInstance.destroy('all');
+      this.initializeFullPage();
     }
   }
 

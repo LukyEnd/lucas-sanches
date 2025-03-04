@@ -15,9 +15,11 @@ import {ExperienceModel} from "../../models/experience.model";
   styleUrl: './training-page.component.scss'
 })
 export class TrainingPageComponent {
-  public trainingData: ExperienceModel
+  public trainingData!: ExperienceModel;
 
   constructor(public aboutService: AboutService) {
-    this.trainingData = aboutService.getTrainingPageData();
+    this.aboutService.getTrainingPageData().subscribe((dataExperience: ExperienceModel) => {
+      this.trainingData = dataExperience;
+    });
   }
 }

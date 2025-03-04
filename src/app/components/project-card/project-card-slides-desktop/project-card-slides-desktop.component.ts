@@ -17,11 +17,13 @@ import {ProjectsService} from "../../../services/project.service";
   styleUrl: './project-card-slides-desktop.component.scss'
 })
 export class ProjectCardSlidesDesktopComponent {
-  public projects: ProjectDataModel;
+  public projects!: ProjectDataModel;
   public currentIndex: number = 0;
 
   constructor(private projectsService: ProjectsService) {
-    this.projects = this.projectsService.getProjectsPageData();
+    this.projectsService.getProjectsPageData().subscribe((dataProject: ProjectDataModel) => {
+      this.projects = dataProject;
+    })
   }
 
   public get prevIndex(): number {

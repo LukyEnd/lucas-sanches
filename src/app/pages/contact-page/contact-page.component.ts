@@ -14,9 +14,11 @@ import {ContactService} from "../../services/contact.service";
   styleUrls: ['./contact-page.component.scss', './../base.scss']
 })
 export class ContactPageComponent {
-  public dataContactPage: DataContactPageModel;
+  public dataContactPage!: DataContactPageModel;
 
   constructor(private contactService: ContactService) {
-    this.dataContactPage = this.contactService.getContactPageData();
+    this.contactService.getContactPageData().subscribe((dataContact: DataContactPageModel) => {
+      this.dataContactPage = dataContact;
+    });
   }
 }

@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {FullPageService} from "../../services/full-page.service";
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {RandomTextsService} from "../../services/random-texts.service";
 import {RandomTextModel} from "../../models/data-random-text.model";
 import {ActivatedRoute, Router} from "@angular/router";
+import {SelectedLanguageModel} from "../../models/selected-language.model";
 
 @Component({
   selector: 'app-navbar',
@@ -17,17 +18,27 @@ import {ActivatedRoute, Router} from "@angular/router";
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
-  public randomTexts: RandomTextModel
-  public isLanguageMenuOpen = false;
-  public selectedLanguage = { code: 'pt', icon: 'assets/language-icons/brasil-icon.png' };
+export class NavbarComponent implements OnInit {
+  public randomTexts!: RandomTextModel;
+  public isLanguageMenuOpen: boolean = false;
+  public selectedLanguage!: SelectedLanguageModel;
 
   constructor(
     private fullPageService: FullPageService,
     private randomTextsService: RandomTextsService,
-    private router: Router, private route: ActivatedRoute
+    private router: Router,
+    private route: ActivatedRoute
   ) {
-    this.randomTexts = this.randomTextsService.getRandomText();
+    this.randomTextsService.getRandomText().subscribe((dataRandom: RandomTextModel) => {
+      this.randomTexts = dataRandom;
+    });
+  }
+
+  public ngOnInit(): void {
+    this.route.queryParamMap.subscribe(params => {
+      const lang: string = params.get('lang') || 'pt';
+      this.updateSelectedLanguage(lang);
+    });
   }
 
   public scrollToHome(): void {
@@ -38,33 +49,32 @@ export class NavbarComponent {
     this.fullPageService.moveToSection('contact');
   }
 
-
-  toggleLanguageMenu(): void {
+  public toggleLanguageMenu(): void {
     this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
   }
 
-  changeLanguage(language: string): void {
-    let languageIcon = '';
-
-    switch (language) {
-      case 'pt':
-        languageIcon = 'assets/language-icons/brasil-icon.png';
-        break;
-      case 'es':
-        languageIcon = 'assets/language-icons/espanha-icon.png';
-        break;
-      case 'en':
-        languageIcon = 'assets/language-icons/eua-icon.png';
-        break;
-    }
-
-    this.selectedLanguage = { code: language, icon: languageIcon };
-
+  public changeLanguage(language: string): void {
     this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { lang: language },
+      queryParams: {lang: language},
       queryParamsHandling: 'merge'
+    }).then(() => {
+      this.updateSelectedLanguage(language);
     });
+
     this.isLanguageMenuOpen = false;
+  }
+
+  private updateSelectedLanguage(language: string): void {
+    const languageIcons: Record<string, string> = {
+      pt: 'assets/language-icons/brasil-icon.png',
+      es: 'assets/language-icons/espanha-icon.png',
+      en: 'assets/language-icons/eua-icon.png'
+    };
+
+    this.selectedLanguage = {
+      code: language,
+      icon: languageIcons[language] || languageIcons['pt']
+    };
   }
 }
