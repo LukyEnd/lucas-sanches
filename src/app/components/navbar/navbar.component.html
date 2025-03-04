@@ -4,8 +4,29 @@
       <img ngSrc="assets/gif-code.gif" alt="DVLPR" title="" height="720" width="976"/>
       <span>DVLPR</span>
     </div>
-    <div class="nav-right">
-      <button class="contact-button" (click)="scrollToContact()">{{ randomTexts.contact }}</button>
+    <div class="buttons-nav-right">
+
+      <div class="language-container">
+        <button class="language-selector" (click)="toggleLanguageMenu()">
+          <img [src]="selectedLanguage.icon" alt="Idioma" width="85" height="85"/>
+        </button>
+        <div *ngIf="isLanguageMenuOpen" class="language-menu">
+          <button (click)="changeLanguage('pt')">
+            <img src="assets/language-icons/brasil-icon.png" alt="Português" width="64" height="64"/>
+          </button>
+          <button (click)="changeLanguage('es')">
+            <img src="assets/language-icons/espanha-icon.png" alt="Español" width="64" height="64"/>
+          </button>
+          <button (click)="changeLanguage('en')">
+            <img src="assets/language-icons/eua-icon.png" alt="English" width="64" height="64"/>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="nav-right">
+        <button class="contact-button" (click)="scrollToContact()">{{ randomTexts.contact }}</button>
+      </div>
     </div>
   </div>
 </div>
