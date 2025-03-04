@@ -1,4 +1,4 @@
-import {EventEmitter, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {RandomTextModel} from "../models/data-random-text.model";
 import {ActivatedRoute} from "@angular/router";
 import {BehaviorSubject, Observable} from "rxjs";
@@ -9,9 +9,6 @@ import {BehaviorSubject, Observable} from "rxjs";
 export class RandomTextsService {
   private randomText: BehaviorSubject<RandomTextModel> =
     new BehaviorSubject<RandomTextModel>({} as RandomTextModel);
-
-  // Evento que será disparado sempre que o texto for atualizado
-  public textUpdated = new EventEmitter<void>();
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParamMap.subscribe(params => {

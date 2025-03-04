@@ -10,6 +10,7 @@
         <img *ngIf="projects.data.length > 0"
              [ngSrc]="projects.data[activeIndex].image.src"
              [alt]="projects.data[activeIndex].image.alt"
+             [title]="projects.data[activeIndex].image.title"
              fill/>
         <a *ngIf="projects.data.length > 0"
            [href]="projects.data[activeIndex].link"
