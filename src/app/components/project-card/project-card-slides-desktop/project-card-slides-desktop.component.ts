@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {NgClass, NgForOf, NgOptimizedImage} from "@angular/common";
-import {ProjectModel} from "../../../models/data-project.model";
+import {ProjectDataModel} from "../../../models/data-project.model";
 import {ProjectsService} from "../../../services/project.service";
 
 @Component({
@@ -17,7 +17,7 @@ import {ProjectsService} from "../../../services/project.service";
   styleUrl: './project-card-slides-desktop.component.scss'
 })
 export class ProjectCardSlidesDesktopComponent {
-  public projects: ProjectModel[];
+  public projects: ProjectDataModel;
   public currentIndex: number = 0;
 
   constructor(private projectsService: ProjectsService) {
@@ -25,11 +25,11 @@ export class ProjectCardSlidesDesktopComponent {
   }
 
   public get prevIndex(): number {
-    return this.currentIndex === 0 ? this.projects.length - 1 : this.currentIndex - 1;
+    return this.currentIndex === 0 ? this.projects.data.length - 1 : this.currentIndex - 1;
   }
 
   public get nextIndex(): number {
-    return (this.currentIndex + 1) % this.projects.length;
+    return (this.currentIndex + 1) % this.projects.data.length;
   }
 
   public nextSlide(): void {
@@ -44,7 +44,7 @@ export class ProjectCardSlidesDesktopComponent {
 
   private updateZIndex(direction: 'next' | 'prev'): void {
     if (typeof document === 'undefined') return;
-    this.projects.forEach((_, index) => {
+    this.projects.data.forEach((_, index) => {
       const element = document.querySelector(`.project-item[data-index="${index}"]`) as HTMLElement;
 
       if (index === this.currentIndex) {

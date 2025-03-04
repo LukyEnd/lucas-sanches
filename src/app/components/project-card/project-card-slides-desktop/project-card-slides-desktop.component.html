@@ -1,5 +1,5 @@
 <div id="container-project-carousel">
-  <h1 class="carousel-title animate__animated animate__fadeIn">Projetos Pessoais</h1>
+  <h1 class="carousel-title animate__animated animate__fadeIn">{{ projects.titleObject }}</h1>
   <div class="base-project-carousel animate__animated animate__fadeIn">
     <button class="project-prev animate__animated animate__fadeInLeft" (click)="prevSlide()">
       <mat-icon>chevron_left</mat-icon>
@@ -7,16 +7,19 @@
 
     <div class="base-project-carousel animate__animated animate__fadeIn">
       <div class="project-wrapper">
-        <div *ngFor="let project of projects; let i = index"
-             [ngClass]="{
-           'project-active': i === currentIndex,
-           'project-left': i === prevIndex,
-           'project-right': i === nextIndex
-           }"
+        <div *ngFor="let project of projects.data; let i = index"
              class="project-item"
-             [attr.data-index]="i">
+             [attr.data-index]="i"
+             [ngClass]="{
+             'project-active': i === currentIndex,
+             'project-left': i === prevIndex,
+             'project-right': i === nextIndex
+             }">
           <a [href]="project.link" target="_blank" class="project-link">
-            <img [ngSrc]="project.image.src" [alt]="project.image.alt" class="project-image" width="800"
+            <img [ngSrc]="project.image.src"
+                 [alt]="project.image.alt"
+                 class="project-image"
+                 width="800"
                  height="700"/>
             <div class="project-text">
               <h3>{{ project.title }}</h3>

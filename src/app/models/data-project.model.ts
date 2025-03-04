@@ -1,4 +1,12 @@
-import { ImagePageModel } from "./images-pages.model";
+import {ImagePageModel} from "./images-pages.model";
+
+export class ProjectDataModel {
+  constructor(
+    public titleObject: string,
+    public data: ProjectModel[] =[]
+  ) {
+  }
+}
 
 export class ProjectModel {
   constructor(
@@ -6,5 +14,6 @@ export class ProjectModel {
     public description: string,
     public image: ImagePageModel,
     public link: string
-  ) {}
+  ) {
+  }
 }

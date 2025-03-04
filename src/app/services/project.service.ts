@@ -1,13 +1,13 @@
 import {Injectable} from '@angular/core';
-import {ProjectModel} from "../models/data-project.model";
+import {ProjectDataModel} from "../models/data-project.model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsService {
-  private projectsPageData: ProjectModel[] = require('./json/pt/data-projects.pt.json');
+  private projectsPageData: ProjectDataModel = require('./json/pt/data-projects.pt.json');
 
-  public getProjectsPageData(): ProjectModel[] {
+  public getProjectsPageData(): ProjectDataModel {
     return this.projectsPageData;
   }
 }

@@ -1,28 +1,25 @@
 <div id="container-projects-carousel">
-  <h1>Projetos Particulares</h1>
-
+  <h1>{{ projects.titleObject }}</h1>
   <div class="base-project-carousel"
        (touchstart)="onTouchStart($event)"
        (touchend)="onTouchEnd($event)">
-
     <button class="nav-btn left" (click)="prevSlide()">‹</button>
 
     <div class="carousel-wrapper">
       <div class="carousel-item">
-        <img *ngIf="projects.length > 0"
-             [src]="projects[activeIndex].image.src"
-             [alt]="projects[activeIndex].image.alt"/>
-
-        <a *ngIf="projects.length > 0"
-           [href]="projects[activeIndex].link"
+        <img *ngIf="projects.data.length > 0"
+             [ngSrc]="projects.data[activeIndex].image.src"
+             [alt]="projects.data[activeIndex].image.alt"
+             fill/>
+        <a *ngIf="projects.data.length > 0"
+           [href]="projects.data[activeIndex].link"
            target="_blank"
            rel="noopener noreferrer">
-          <h3>{{ projects[activeIndex].description }}</h3>
+          <h3>{{ projects.data[activeIndex].description }}</h3>
         </a>
       </div>
     </div>
 
     <button class="nav-btn right" (click)="nextSlide()">›</button>
-
   </div>
 </div>

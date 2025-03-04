@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {DataSkillPageModel} from "../models/data-skills-page.data";
+import {DataSkillPageModel} from "../models/data-skills-page.model";
 
 @Injectable({
   providedIn: 'root'

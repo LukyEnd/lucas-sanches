@@ -28,7 +28,7 @@ export class ProjectsPageComponent {
   @HostListener('window:resize', ['$event'])
   public onResize(event: any): void {
     if (this.isPlatformBrowser()) {
-      this.isDesktop = event.target.innerWidth > 1200;
+      this.isDesktop = event.target.innerWidth > 900;
     }
   }
 

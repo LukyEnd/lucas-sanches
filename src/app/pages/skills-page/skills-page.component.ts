@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NgClass, NgForOf, NgOptimizedImage, NgStyle} from "@angular/common";
 import {SkillsService} from "../../services/skills.service";
-import {DataSkillPageModel} from "../../models/data-skills-page.data";
+import {DataSkillPageModel} from "../../models/data-skills-page.model";
 
 @Component({
   selector: 'app-skills-page',
