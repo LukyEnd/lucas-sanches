@@ -1,6 +1,8 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgForOf} from "@angular/common";
 import {DataObjectModel} from "../../models/data-object.model";
+import {RandomTextsService} from "../../services/random-texts.service";
+import {RandomTextModel} from "../../models/data-random-text.model";
 
 @Component({
   selector: 'app-modal-experiences-details',
@@ -14,6 +16,11 @@ import {DataObjectModel} from "../../models/data-object.model";
 export class ModalExperiencesDetailsComponent {
   @Input() public selectedExperiences!: DataObjectModel;
   @Output() public close = new EventEmitter<void>();
+  public randomTexts: RandomTextModel
+
+  constructor(private randomTextsService: RandomTextsService) {
+    this.randomTexts = this.randomTextsService.getRandomText()
+  }
 
   public closeModal(): void {
     this.close.emit();

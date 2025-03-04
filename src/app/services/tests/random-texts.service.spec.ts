@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FullpageService } from './fullpage.service';
+import { RandomTextsService } from './random-texts.service';
 
-describe('FullpageService', () => {
-  let service: FullpageService;
+describe('RandomTextsService', () => {
+  let service: RandomTextsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FullpageService);
+    service = TestBed.inject(RandomTextsService);
   });
 
   it('should be created', () => {

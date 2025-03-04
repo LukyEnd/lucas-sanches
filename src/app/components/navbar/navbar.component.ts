@@ -1,7 +1,9 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {FullpageService} from "../../services/fullpage.service";
+import {FullPageService} from "../../services/full-page.service";
 import {NgOptimizedImage} from "@angular/common";
+import {RandomTextsService} from "../../services/random-texts.service";
+import {RandomTextModel} from "../../models/data-random-text.model";
 
 @Component({
   selector: 'app-navbar',
@@ -14,14 +16,20 @@ import {NgOptimizedImage} from "@angular/common";
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  constructor(private fullpageService: FullpageService) {
+  public randomTexts: RandomTextModel
+
+  constructor(
+    private fullPageService: FullPageService,
+    private randomTextsService: RandomTextsService
+  ) {
+    this.randomTexts = this.randomTextsService.getRandomText();
   }
 
   public scrollToHome(): void {
-    this.fullpageService.moveToSection('home');
+    this.fullPageService.moveToSection('home');
   }
 
   public scrollToContact() {
-    this.fullpageService.moveToSection('contact');
+    this.fullPageService.moveToSection('contact');
   }
 }

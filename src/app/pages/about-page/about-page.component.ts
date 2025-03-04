@@ -6,7 +6,7 @@ import {TrainingPageComponent} from "../training-page/training-page.component";
 import {
   ProfessionalExperiencesPageComponent
 } from "../professional-experiences-page/professional-experiences-page.component";
-import {FullpageService} from "../../services/fullpage.service";
+import {FullPageService} from "../../services/full-page.service";
 
 @Component({
   selector: 'app-about-page',
@@ -25,7 +25,7 @@ export class AboutPageComponent {
 
   constructor(
     private aboutPageService: AboutService,
-    private fullPageService: FullpageService,
+    private fullPageService: FullPageService,
   ) {
     this.aboutPage = this.aboutPageService.getAboutPageData();
   }

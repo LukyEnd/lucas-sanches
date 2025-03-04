@@ -4,7 +4,7 @@ import {AboutPageComponent} from "./pages/about-page/about-page.component";
 import {ProjectsPageComponent} from "./pages/projects-page/projects-page.component";
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
 import {NavbarComponent} from "./components/navbar/navbar.component";
-import {FullpageService} from "./services/fullpage.service";
+import {FullPageService} from "./services/full-page.service";
 import {FooterComponent} from "./components/footer/footer.component";
 import {SkillsPageComponent} from "./pages/skills-page/skills-page.component";
 
@@ -24,12 +24,12 @@ import {SkillsPageComponent} from "./pages/skills-page/skills-page.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit, OnInit {
-  title = 'lucas-sanches';
+  title: string = 'lucas-sanches';
 
-  constructor(private fullpageService: FullpageService) {
+  constructor(private fullPageService: FullPageService) {
   }
 
-  ngOnInit() {
+  public ngOnInit(): void {
     if (typeof window !== 'undefined') {
       if (!window.location.hash || window.location.hash !== '#home') {
         window.location.hash = '#home';
@@ -38,6 +38,6 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
 
   public ngAfterViewInit(): void {
-    this.fullpageService.initializeFullpage();
+    this.fullPageService.initializeFullPage();
   }
 }

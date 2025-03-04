@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
-import {FullpageService} from "../../services/fullpage.service";
+import {FullPageService} from "../../services/full-page.service";
 import {HomePageModel} from "../../models/data-home-page.model";
 import {HomeService} from "../../services/home.service";
 
@@ -21,7 +21,7 @@ export class HomePageComponent {
   public isOpen: boolean = false;
 
   constructor(
-    private fullPageService: FullpageService,
+    private fullPageService: FullPageService,
     private homePageService: HomeService
   ) {
     this.homePageData = this.homePageService.getHomePageData();

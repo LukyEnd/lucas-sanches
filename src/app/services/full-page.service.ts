@@ -1,20 +1,27 @@
 import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {isPlatformBrowser} from "@angular/common";
+import {RandomTextModel} from "../models/data-random-text.model";
+import {RandomTextsService} from "./random-texts.service";
 
 declare var fullpage: any;
 
 @Injectable({
   providedIn: 'root',
 })
-export class FullpageService {
-  public fullpageInstance: any;
+export class FullPageService {
+  public fullPageInstance: any;
+  private randomText: RandomTextModel
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: any,
+    private randomTextsService: RandomTextsService,
+  ) {
+    this.randomText = this.randomTextsService.getRandomText();
   }
 
-  public initializeFullpage(): void {
+  public initializeFullPage(): void {
     if (typeof fullpage !== 'undefined') {
-      this.fullpageInstance = new fullpage('#fullpage', {
+      this.fullPageInstance = new fullpage('#fullpage', {
 
         // Navigation
         menu: '#menu',
@@ -22,7 +29,13 @@ export class FullpageService {
         anchors: ['home', 'about', 'skills', 'projects', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Inicial', 'Sobre mim','Experiências', 'Projetos', 'Contato'],
+        navigationTooltips: [
+          this.randomText.home,
+          this.randomText.about,
+          this.randomText.experience,
+          this.randomText.projects,
+          this.randomText.contact
+        ],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -77,9 +90,9 @@ export class FullpageService {
   }
 
   public moveToSection(section: string): void {
-    if (this.fullpageInstance) {
+    if (this.fullPageInstance) {
       window.location.hash = `#${section}`;
-      this.fullpageInstance.moveTo(section);
+      this.fullPageInstance.moveTo(section);
     } else {
       console.error('Fullpage.js não foi inicializado');
     }
