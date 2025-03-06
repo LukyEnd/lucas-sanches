@@ -7,6 +7,7 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 import {FullPageService} from "./services/full-page.service";
 import {FooterComponent} from "./components/footer/footer.component";
 import {SkillsPageComponent} from "./pages/skills-page/skills-page.component";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-root',
@@ -18,13 +19,15 @@ import {SkillsPageComponent} from "./pages/skills-page/skills-page.component";
     ContactPageComponent,
     NavbarComponent,
     FooterComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    NgIf
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit, OnInit {
-  title: string = 'lucas-sanches';
+  public title: string = 'lucas-sanches';
+  public isLoading: boolean = true;
 
   constructor(private fullPageService: FullPageService) {
   }
@@ -35,6 +38,10 @@ export class AppComponent implements AfterViewInit, OnInit {
         window.location.hash = '#home';
       }
     }
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 500);
   }
 
   public ngAfterViewInit(): void {
