@@ -4,12 +4,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: calc(10vh + 10px);
 
   h1 {
     width: 100%;
     font-family: var(--font-family-primary), sans-serif;
     font-size: var(--font-size-large);
     text-align: center;
+    margin: 0;
   }
 
   .base-training-page {
@@ -19,6 +21,15 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+
+    .subtitle-training-page{
+      width: 100%;
+      height: 50px;
+      font-family: var(--font-family-secondary), sans-serif;
+      font-size: var(--font-size-medium);
+      text-align: center;
+      color: var(--subitle-color);
+    }
 
     .flip-card {
       background-color: transparent;

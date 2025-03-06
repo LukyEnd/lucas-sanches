@@ -8,7 +8,8 @@ export class RandomTextModel {
     public projects: string,
     public language: string,
     public personalDevelopment: string,
-    public professionalExperience: string
+    public professionalExperience: string,
+    public moreDetails: string,
   ) {
   }
 }

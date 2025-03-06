@@ -70,26 +70,9 @@
         align-items: center;
         justify-content: flex-end;
 
-        .btn {
-          background-color: #04b2c6;
-          color: white;
-          font-size: 16px;
-          padding: 10px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          width: 100%;
-          max-width: 200px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 2px;
-        }
-
-        .btn:hover {
-          background-color: #03a0b2;
+        button {
+          max-width: 170px;
+          height: 50px;
         }
       }
     }
