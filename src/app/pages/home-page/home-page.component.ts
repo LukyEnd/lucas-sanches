@@ -29,7 +29,6 @@ export class HomePageComponent {
     });
   }
 
-
   public toggle(): void {
     this.isOpen = !this.isOpen;
     this.fullPageService.moveToSection('about');

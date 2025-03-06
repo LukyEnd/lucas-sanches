@@ -27,7 +27,6 @@ import {NgIf} from "@angular/common";
 })
 export class AppComponent implements AfterViewInit, OnInit {
   public title: string = 'lucas-sanches';
-  public isLoading: boolean = true;
 
   constructor(private fullPageService: FullPageService) {
   }
@@ -38,10 +37,6 @@ export class AppComponent implements AfterViewInit, OnInit {
         window.location.hash = '#home';
       }
     }
-
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 500);
   }
 
   public ngAfterViewInit(): void {

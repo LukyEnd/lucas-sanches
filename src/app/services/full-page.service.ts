@@ -88,23 +88,9 @@ export class FullPageService {
 
   public moveToSection(section: string): void {
     if (this.fullPageInstance) {
-      this.fullPageInstance.moveTo(section);
+      window.location.hash = `#${section}`;
     } else {
       console.error('Fullpage.js não foi inicializado');
-    }
-  }
-
-  public updateNavigationTooltips(): void {
-    if (this.fullPageInstance) {
-      const tooltips = [
-        this.randomText.home,
-        this.randomText.about,
-        this.randomText.experience,
-        this.randomText.projects,
-        this.randomText.contact
-      ];
-
-      this.fullPageInstance.setNavigationTooltips(tooltips);
     }
   }
 
