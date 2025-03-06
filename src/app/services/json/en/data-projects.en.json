@@ -1,5 +1,5 @@
 {
-  "titleObject": "Personal Projects",
+  "titleObject": "Personal projects",
   "data": [
     {
       "title": "LukyProductForm",
@@ -12,12 +12,12 @@
       "link": "https://github.com/LukyEnd/cadaster-product-react-vite"
     },
     {
-      "title": "Transport API Query - Porto Alegre",
+      "title": "Transport API query - Porto Alegre",
       "description": "Angular system for querying public transportation in Porto Alegre, integrating with the Bus and Lotação API and displaying routes on MAPBOX.",
       "image": {
         "src": "/assets/slides/app-poa.png",
-        "alt": "Image of the Transport API Query - Porto Alegre project",
-        "title": "Transport API Query - Porto Alegre"
+        "alt": "Image of the transport API query - Porto Alegre project",
+        "title": "Transport API query - Porto Alegre"
       },
       "link": "https://github.com/LukyEnd/datapoa-angular-material-ngrx"
     },

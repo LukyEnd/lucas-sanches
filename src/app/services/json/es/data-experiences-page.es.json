@@ -1,77 +1,78 @@
 {
-  "titleObject": "My Professional Experiences",
+  "titleObject": "Mis experiencias profesionales",
   "data": [
     {
-      "title": "Medical Consultation Website Modernization",
-      "data": "October 2024 - December 2024",
-      "description": "Redesign of a medical consultation website using Angular.",
-      "details": "I worked on the restructuring and modernization of a medical consultation website at Galáxia Digital, migrating from plain JavaScript to Angular. The transformation included improvements in interface, usability, and performance, resulting in a more modern and functional design."
+      "title": "Modernización del sitio web de consulta médica",
+      "data": "Octubre 2024 - Diciembre 2024",
+      "description": "Reformulación del sitio web de consulta médica utilizando Angular.",
+      "details": "Trabajé en la reestructuración y modernización del sitio web de consulta médica en Galaxia Digital, migrando de JavaScript puro a Angular. La transformación incluyó mejoras en la interfaz, usabilidad y rendimiento, logrando un diseño más moderno y funcional."
     },
     {
-      "title": "Website Development for a Mattress Company",
-      "data": "October 2024 - December 2024",
-      "description": "Development of a website for a mattress company using Angular.",
-      "details": "I was responsible for creating and optimizing the website for a mattress company, using Angular to replace the existing plain JavaScript code. The project resulted in a more sophisticated design, an enhanced user experience, faster navigation, and a more modern look."
+      "title": "Desarrollo de sitio web para empresa de colchones",
+      "data": "Octubre 2024 - Diciembre 2024",
+      "description": "Desarrollo de un sitio web para una empresa de colchones con Angular.",
+      "details": "Fui responsable de crear y optimizar el sitio web de una empresa de colchones, utilizando Angular para reemplazar el código en JavaScript puro. El proyecto resultó en un diseño más sofisticado, con una mejor experiencia de usuario, navegación más rápida y una apariencia más moderna."
     },
     {
-      "title": "Queue Reduction and Sales Increase",
-      "data": "June 2023 - April 2024",
-      "description": "Implementation of improvements in the payment system.",
-      "details": "I worked on optimizing the payment process at Grupo Panvel, allowing transactions to be completed directly at the counter. This change drastically reduced queues and positively impacted sales."
+      "title": "Reducción de filas y aumento de ventas",
+      "data": "Junio 2023 - Abril 2024",
+      "description": "Implementación de mejoras en el sistema de pago.",
+      "details": "Trabajé en la optimización del flujo de pagos en Grupo Panvel, permitiendo que los pagos se realizaran directamente en el mostrador. Este cambio redujo drásticamente las filas e impactó positivamente en las ventas."
     },
     {
-      "title": "Bug Fixing and Quality Assurance",
-      "data": "June 2023 - April 2024",
-      "description": "Identifying and fixing issues before release.",
-      "details": "I conducted continuous testing and early problem detection at Grupo Panvel, ensuring the delivery of more stable and secure code, minimizing production failures."
+      "title": "Corrección de errores y garantía de calidad",
+      "data": "Junio 2023 - Abril 2024",
+      "description": "Identificación y corrección de fallos antes de la entrega.",
+      "details": "Realicé pruebas continuas y anticipación de problemas en Grupo Panvel, asegurando la entrega de un código más estable y seguro, minimizando fallos en producción."
     },
     {
-      "title": "User Experience Improvement",
-      "data": "June 2023 - April 2024",
-      "description": "Interface optimization for new systems.",
-      "details": "At Grupo Panvel, I worked on interface optimization to make new system workflows more intuitive and efficient. I improved the payment process and adapted the interface to facilitate user adoption, ensuring a smoother and more accessible experience."
+      "title": "Mejora en la experiencia del usuario",
+      "data": "Junio 2023 - Abril 2024",
+      "description": "Optimización de interfaces para nuevos sistemas.",
+      "details": "En Grupo Panvel, trabajé en la optimización de interfaces para hacer que los nuevos flujos del sistema fueran más intuitivos y eficientes. Mejoré el proceso de pago y adapté la interfaz para facilitar la adopción por parte de los usuarios, garantizando una experiencia más fluida y accesible."
     },
     {
-      "title": "Code Review and Code Quality",
-      "data": "June 2023 - April 2024",
-      "description": "Code review to ensure reliability and performance.",
-      "details": "During my time at Grupo Panvel, I actively participated in code reviews, identifying critical issues and suggesting improvements. These practices helped maintain cleaner, standardized, and higher-performing code, ensuring safer and more efficient deliveries."
+      "title": "Revisión de código y calidad del código",
+      "data": "Junio 2023 - Abril 2024",
+      "description": "Revisión de código para garantizar confiabilidad y rendimiento.",
+      "details": "Durante mi trabajo en Grupo Panvel, participé activamente en revisiones de código, identificando problemas críticos y sugiriendo mejoras. Estas prácticas ayudaron a mantener un código más limpio, estandarizado y con mejor rendimiento, asegurando entregas más seguras y eficientes."
     },
     {
-      "title": "Development of an Internal Platform for Startups",
-      "data": "July 2021 - June 2023",
-      "description": "Creation of an internal system for startup management.",
-      "details": "I was responsible for developing an internal platform for startups at Grupo Panvel, eliminating reliance on third-party software. The project brought more autonomy and control over processes, allowing for more efficient and personalized management."
+      "title": "Desarrollo de plataforma interna para startups",
+      "data": "Julio 2021 - Junio 2023",
+      "description": "Creación de un sistema interno para la gestión de startups.",
+      "details": "Fui responsable del desarrollo de una plataforma interna para startups en Grupo Panvel, eliminando la dependencia de software de terceros. El proyecto brindó más autonomía y control sobre los procesos, permitiendo una gestión más eficiente y personalizada."
     },
     {
-      "title": "AI Exploration for Document Processing",
-      "data": "July 2021 - June 2023",
-      "description": "Automated conversion of PDFs into structured strings.",
-      "details": "At Grupo Panvel, I explored the use of Artificial Intelligence to automate document processing. I developed a system capable of extracting and structuring data from PDFs, optimizing internal processes and reducing the need for manual intervention."
+      "title": "Exploración de IA para el procesamiento de documentos",
+      "data": "Julio 2021 - Junio 2023",
+      "description": "Conversión automatizada de PDFs en cadenas estructuradas.",
+      "details": "En Grupo Panvel, exploré el uso de inteligencia artificial para automatizar el procesamiento de documentos. Desarrollé un sistema capaz de extraer y estructurar datos de PDFs, optimizando procesos internos y reduciendo la necesidad de intervención manual."
     },
     {
-      "title": "Front-End Development for Panvel's Website",
-      "data": "July 2021 - June 2023",
-      "description": "Worked on the website interface using Angular and NgRx.",
-      "details": "I worked on the development of Panvel's website using Angular, NgRx, and RxJS, ensuring a dynamic and responsive interface. Additionally, I implemented automated tests with Cypress and Jasmine, guaranteeing quality and stability of delivered functionalities."
+      "title": "Desarrollo Front-end en el sitio web de Panvel",
+      "data": "Julio 2021 - Junio 2023",
+      "description": "Trabajo en la interfaz del sitio web con Angular y NgRx.",
+      "details": "Trabajé en el desarrollo del sitio web de Panvel utilizando Angular, NgRx y RxJS, garantizando una interfaz dinámica y responsiva. Además, implementé pruebas automatizadas con Cypress y Jasmine, asegurando la calidad y estabilidad de las funcionalidades entregadas."
     },
     {
-      "title": "Store Management and Multifunctional Support",
-      "data": "September 2015 - November 2019",
-      "description": "Store management and operational support.",
-      "details": "At Clica Combustível, I was responsible for managing the convenience store, ensuring organization and smooth operation. Additionally, I took on multifunctional roles, assisting as a cashier and gas station attendant when needed."
+      "title": "Gestión de tienda y soporte multifuncional",
+      "data": "Septiembre 2015 - Noviembre 2019",
+      "description": "Gestión de tienda y soporte operativo.",
+      "details": "En Clica Combustível, fui responsable de la gestión de la tienda de conveniencia, asegurando la organización y el buen funcionamiento del establecimiento. Además, trabajé de manera multifuncional, ayudando como cajero y empleado de gasolinera cuando fue necesario."
     },
     {
-      "title": "IT Management and Technical Support",
-      "data": "September 2015 - November 2019",
-      "description": "IT infrastructure maintenance and support.",
-      "details": "At Clica Combustível, I was responsible for maintaining the IT infrastructure, diagnosing and repairing computers. I also managed the network and internal systems, ensuring the continuous and efficient operation of the store."
+      "title": "Gestión de TI y soporte técnico",
+      "data": "Septiembre 2015 - Noviembre 2019",
+      "description": "Mantenimiento y soporte de infraestructura de TI.",
+      "details": "Trabajé en Clica Combustível como responsable del mantenimiento de la infraestructura de TI, realizando diagnósticos y reparaciones en computadoras. También gestioné la red y los sistemas internos, asegurando el funcionamiento continuo y eficiente de la tienda."
     },
     {
-      "title": "Camera and CCTV Monitoring",
-      "data": "September 2015 - November 2019",
-      "description": "Security monitoring through video surveillance.",
-      "details": "I was responsible for managing the security camera system at Clica Combustível, ensuring operational integrity and actively contributing to incident prevention."
+      "title": "Monitoreo de cámaras y CCTV",
+      "data": "Septiembre 2015 - Noviembre 2019",
+      "description": "Supervisión de seguridad por videovigilancia.",
+      "details": "Fui responsable de la gestión del sistema de cámaras de seguridad en Clica Combustível, asegurando la integridad de las operaciones y contribuyendo activamente a la prevención de incidentes."
     }
   ]
 }
+

@@ -1,5 +1,5 @@
 {
-  "titleObject": "Projetos Pessoais",
+  "titleObject": "Projetos pessoais",
   "data": [
     {
       "title": "LukyProductForm",
@@ -12,11 +12,11 @@
       "link": "https://github.com/LukyEnd/cadaster-product-react-vite"
     },
     {
-      "title": "Consulta API de Transportes - Porto Alegre",
+      "title": "Consulta API de transportes - Porto Alegre",
       "description": "Sistema em Angular para consulta de transportes públicos em Porto Alegre, com integração à API de Ônibus e Lotações, e exibição de rotas no MAPBOX.",
       "image": {
         "src": "/assets/slides/app-poa.png",
-        "alt": "Imagem do projeto Consulta API de Transportes - Porto Alegre",
+        "alt": "Imagem do projeto consulta API de transportes - Porto Alegre",
         "title": "Consulta API de Transportes - Porto Alegre"
       },
       "link": "https://github.com/LukyEnd/datapoa-angular-material-ngrx"
