@@ -24,7 +24,6 @@ export class FullPageService {
   public initializeFullPage(): void {
     if (typeof fullpage !== 'undefined') {
       this.fullPageInstance = new fullpage('#fullpage', {
-
         // Navigation
         menu: '#menu',
         lockAnchors: false,
@@ -54,13 +53,9 @@ export class FullPageService {
         loopBottom: false,
         loopTop: false,
         offsetSections: false,
-        resetSliders: true,
-        scrollOverflowMacStyle: true,
-        scrollOverflowReset: false,
         skipIntermediateItems: false,
         touchSensitivity: 15,
         bigSectionsDestination: null,
-        adjustOnNavChange: true,
 
         // Accessibility
         keyboardScrolling: false,
