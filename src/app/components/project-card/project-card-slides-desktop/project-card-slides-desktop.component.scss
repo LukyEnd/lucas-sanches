@@ -1,10 +1,13 @@
 #container-project-carousel {
-  width: 60vw;
+  width: 100vw;
+  max-width: 80vw;
   max-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 130px;
+
 
   .carousel-title {
     font-family: var(--font-main), sans-serif;

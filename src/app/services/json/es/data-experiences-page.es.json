@@ -2,70 +2,34 @@
   "titleObject": "Mis Experiencias Profesionales",
   "data": [
     {
+      "title": "Modernización del Sitio de Consulta Médica",
+      "data": "Octubre 2024 - Diciembre 2024",
+      "description": "Reformulación del sitio de consulta médica utilizando Angular.",
+      "details": "Trabajé en la reestructuración y modernización del sitio de consulta médica en Galáxia Digital, migrando de JavaScript puro a Angular. La transformación incluyó mejoras en la interfaz, usabilidad y rendimiento, resultando en un diseño más moderno y funcional."
+    },
+    {
+      "title": "Desarrollo del Sitio para Empresa de Colchones",
+      "data": "Octubre 2024 - Diciembre 2024",
+      "description": "Desarrollo de sitio web para una empresa de colchones con Angular.",
+      "details": "Fui responsable de crear y optimizar el sitio web de una empresa de colchones, utilizando Angular para reemplazar el código en JavaScript puro. El proyecto resultó en un diseño más sofisticado, con una experiencia de usuario mejorada, navegación más rápida y un aspecto más actualizado."
+    },
+    {
       "title": "Reducción de Filas y Aumento de Ventas",
       "data": "Junio 2023 - Abril 2024",
       "description": "Implementación de mejoras en el sistema de pago.",
-      "details": "Trabajé en la optimización del flujo de pagos, permitiendo que se realizaran directamente en el mostrador. Este cambio redujo drásticamente las filas y tuvo un impacto positivo en las ventas."
+      "details": "Trabajé en la optimización del flujo de pagos en Grupo Panvel, permitiendo que se realizaran directamente en el mostrador. Este cambio redujo drásticamente las filas e impactó positivamente las ventas."
     },
     {
       "title": "Corrección de Errores y Garantía de Calidad",
       "data": "Junio 2023 - Abril 2024",
-      "description": "Identificación y corrección de fallos antes de la entrega.",
-      "details": "Realicé pruebas continuas y anticipación de problemas para garantizar la entrega de un código más estable y seguro, minimizando fallos en producción."
+      "description": "Identificación y corrección de fallas antes de la entrega.",
+      "details": "Realicé pruebas continuas y anticipación de problemas en Grupo Panvel, garantizando la entrega de un código más estable y seguro, minimizando fallas en producción."
     },
     {
       "title": "Mejora en la Experiencia del Usuario",
       "data": "Junio 2023 - Abril 2024",
       "description": "Optimización de interfaces para nuevos sistemas.",
-      "details": "Trabajé en la usabilidad de nuevos flujos, haciendo la interfaz más intuitiva y eficiente, facilitando la adopción de nuevas funcionalidades por parte de los usuarios."
-    },
-    {
-      "title": "Revisión de Código y Calidad del Código",
-      "data": "Junio 2023 - Abril 2024",
-      "description": "Revisión de código para garantizar confiabilidad y rendimiento.",
-      "details": "Participé activamente en revisiones de código, identificando posibles fallos y proponiendo mejoras para mantener un código limpio y eficiente."
-    },
-    {
-      "title": "Desarrollo de Plataforma Interna para Startups",
-      "data": "Julio 2021 - Junio 2023",
-      "description": "Creación de un sistema interno para la gestión de startups.",
-      "details": "Desarrollé una plataforma web para la gestión de startups, eliminando la necesidad de software de pago y proporcionando mayor autonomía al proceso."
-    },
-    {
-      "title": "Exploración de IA para el Procesamiento de Documentos",
-      "data": "Julio 2021 - Junio 2023",
-      "description": "Conversión automatizada de PDFs en cadenas estructuradas.",
-      "details": "Implementé un proceso basado en IA para interpretar documentos de forma automática, reduciendo el trabajo manual y aumentando la eficiencia en el análisis de datos."
-    },
-    {
-      "title": "Desarrollo Front-end en el Sitio Institucional",
-      "data": "Julio 2021 - Junio 2023",
-      "description": "Trabajo en la interfaz del sitio con Angular y NgRx.",
-      "details": "Colaboré en la construcción y mejora del front-end utilizando Angular, NgRx y RxJS, implementando pruebas automatizadas para garantizar calidad."
-    },
-    {
-      "title": "Mejora Continua de Habilidades Técnicas",
-      "data": "Julio 2021 - Junio 2023",
-      "description": "Participación en cursos y entrenamientos.",
-      "details": "Busqué capacitación continua en desarrollo, buenas prácticas, pruebas automatizadas y tecnologías modernas para mejorar mis habilidades."
-    },
-    {
-      "title": "Gestión de Tienda y Soporte Multifuncional",
-      "data": "Septiembre 2015 - Noviembre 2019",
-      "description": "Gestión de tienda y soporte operativo.",
-      "details": "Me encargué de la gestión de inventario, compras y logística, además de apoyar en la atención como cajero y dependiente para mantener el funcionamiento de la unidad."
-    },
-    {
-      "title": "Gestión de TI y Soporte Técnico",
-      "data": "Septiembre 2015 - Noviembre 2019",
-      "description": "Mantenimiento y soporte de infraestructura de TI.",
-      "details": "Realicé diagnósticos y reparaciones de hardware, configuré redes y sistemas, garantizando la operación continua y soporte emergencial."
-    },
-    {
-      "title": "Monitoreo de Cámaras y CCTV",
-      "data": "Septiembre 2015 - Noviembre 2019",
-      "description": "Supervisión de seguridad mediante videovigilancia.",
-      "details": "Administré el sistema de cámaras de seguridad, asegurando la integridad de las operaciones y ayudando en la prevención de incidentes."
+      "details": "En Grupo Panvel, trabajé en la optimización de interfaces para hacer que los nuevos flujos del sistema fueran más intuitivos y eficientes. Mejoré el proceso de pago y adapté la interfaz para facilitar la adopción por parte de los usuarios, asegurando una experiencia más fluida y accesible."
     }
   ]
 }
