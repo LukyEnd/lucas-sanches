@@ -1,13 +1,12 @@
 #container-project-carousel {
   width: 100vw;
-  max-width: 80vw;
+  max-width: 1200px;
   max-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 130px;
-
 
   .carousel-title {
     font-family: var(--font-main), sans-serif;
@@ -112,24 +111,20 @@
 
           .project-link {
             width: 100%;
+            height: 320px;
             text-decoration: none;
 
             .project-text {
-              position: absolute;
               bottom: 0;
               left: 0;
               right: 0;
               background: rgba(0, 0, 0, 0.94);
               color: white;
-              max-height: 180px;
               display: flex;
               align-items: center;
               flex-direction: column;
-              justify-content: space-between;
-              padding: 15px;
-              cursor: pointer;
-              font-family: var(--font-main), sans-serif;
-              border-radius: 0 0 10px 10px;
+              justify-content: center;
+              padding: 0 10px 10px 10px;
 
               h3 {
                 display: flex;
