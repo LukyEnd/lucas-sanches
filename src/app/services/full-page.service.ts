@@ -18,13 +18,13 @@ export class FullPageService {
   ) {
     this.randomTextsService.getRandomText().subscribe((dataRandom: RandomTextModel) => {
       this.randomText = dataRandom;
-      this.updateFullPageTooltips();
     });
   }
 
   public initializeFullPage(): void {
     if (typeof fullpage !== 'undefined') {
       this.fullPageInstance = new fullpage('#fullpage', {
+
         // Navigation
         menu: '#menu',
         lockAnchors: false,
@@ -99,10 +99,17 @@ export class FullPageService {
     }
   }
 
-  private updateFullPageTooltips(): void {
+  public updateNavigationTooltips(): void {
     if (this.fullPageInstance) {
-      this.fullPageInstance.destroy('all');
-      this.initializeFullPage();
+      const tooltips = [
+        this.randomText.home,
+        this.randomText.about,
+        this.randomText.experience,
+        this.randomText.projects,
+        this.randomText.contact
+      ];
+
+      this.fullPageInstance.setNavigationTooltips(tooltips);
     }
   }
 
